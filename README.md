@@ -1,4 +1,5 @@
 # css-gradient
+A project that makes a css gradient from various user inputs. Made using Vue.js
 
 ## Project setup
 ```
@@ -20,5 +21,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
