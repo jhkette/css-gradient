@@ -1,8 +1,11 @@
 <template>
  <v-app>
+   
    <Gradient></Gradient>
+   <Colors></Colors>
   <Slider></Slider>
   <Opacity></Opacity>
+  
 </v-app>
 </template>
 
@@ -10,6 +13,7 @@
 import Gradient from './components/Gradient'
 import Slider from './components/Slider'
 import Opacity from './components/Opacity'
+import Colors from './components/Colors'
 
 export default {
   
@@ -18,7 +22,8 @@ export default {
   components: {
     Slider,
     Opacity,
-    Gradient
+    Gradient, 
+    Colors
    
   },
   methods: {

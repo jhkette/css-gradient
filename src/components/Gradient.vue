@@ -12,9 +12,9 @@
 import { mapGetters } from "vuex";
 export default {
   computed:{ 
-      ...mapGetters(["getPercentage", "getOpacity"]),
+      ...mapGetters(["getPercentage", "getOpacity", "getFirstColour", "getSecondColour"]),
        backgroundString: function () {
-           return `${this.direction}(${this.degree}deg, ${this.color1} ${this.getPercentage}%, ${this.color2} 100%)`
+           return `${this.direction}(${this.degree}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`
        },
        renderOpacity: function () {
            if(this.getOpacity == 10){
@@ -27,11 +27,8 @@ export default {
 
    data: function () {
     return {
-        backgroundGradient1: 'linear-gradient( rgba(0, 23, 32, 0.9) 70%, rgba(255, 32, 32, 0.9) 100%)',
-      backgroundGradient: '( rgba(0, 23, 32, 0.9) 70%, rgba(255, 32, 32, 0.9) 100%)',
+      
       direction: 'linear-gradient',
-      color1: 'rgba(0, 23, 32, 0.9)',
-      color2: 'rgba(255, 32, 32, 0.9)',
       degree: '90'
 
 
