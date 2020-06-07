@@ -3,13 +3,19 @@ const state = {
   opacity: 0,
   colour1: '',
   colour2: '',
+  c1selected: false,
+  c2selected: false
 }
 
 const getters = {
     getPercentage: (state) => state.percentage,
     getOpacity: (state) => state.opacity,
     getFirstColour: (state) => state.colour1,
-    getSecondColour: (state) => state.colour2
+    getSecondColour: (state) => state.colour2,
+    getc1selected: (state) => state.c1selected,
+    getc2selected: (state) => state.c2selected,
+    getc1unselected: (state) => state.c1selected,
+    getc2unselected: (state) => state.c2selected
 }
 
 const actions = {
@@ -24,7 +30,21 @@ const actions = {
     },
     addOpacity: ({commit}, opacity) => {
         commit('setOpacity', opacity)
+    },
+    addc1selected: ({commit}) => {
+        commit('setc1selected')
+    },
+    addc2selected: ({commit}) => {
+        commit('setc2selected')
+    },
+    addc1unselected: ({commit}) => {
+        commit('setc1unselected')
+    },
+    addc2unselected: ({commit}) => {
+        commit('setc2unselected')
     }
+
+
 
 }
 
@@ -40,6 +60,18 @@ const mutations = {
     },
     setColour2: (state, colour2) => {
         state.colour2 = colour2;
+    },
+    setc1selected: (state) => {
+        state.c1selected = true
+    },
+    setc2selected: (state) => {
+        state.c2selected = true
+    },
+    setc1unselected: (state) => {
+        state.c1selected = false
+    },
+    setc2unselected: (state) => {
+        state.c2selected = false
     }
 
 }
