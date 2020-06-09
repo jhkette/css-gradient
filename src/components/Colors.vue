@@ -1,15 +1,19 @@
 <template>
   <div>
     <v-col class="d-flex justify-space-around">
-       
-      <v-color-picker @input="addFirstColour"></v-color-picker>
-      
-      <v-color-picker @input="addSecondColour"></v-color-picker>
+       <div v-if="getc1selected">
+      <v-color-picker @input="all"></v-color-picker>
+      </div>
+      <div v-if="getc2selected">
+      <v-color-picker @input="all1"></v-color-picker>
+      </div>
     </v-col>
     <v-col class="d-flex justify-space-around">
-    <div class="swatch" v-bind:style="{backgroundColor: getFirstColour }" ></div>
-    <div class="swatch" v-bind:style="{backgroundColor: getSecondColour }" ></div>
+    <div class="swatch" id="swatch1" v-bind:style="{backgroundColor: getFirstColour }" @click="color2" ></div>
+    <div class="swatch" id="swatch2" v-bind:style="{backgroundColor: getSecondColour }" @click="color1" ></div>
      </v-col>
+     {{getc1selected}}
+     {{getc2selected}}
   </div>
 </template>
 <script>
@@ -18,13 +22,35 @@ import { mapGetters, mapActions } from "vuex";
 export default {
 
   computed: {
-    ...mapGetters(["getFirstColour", "getSecondColour"])
+    ...mapGetters(["getFirstColour", "getSecondColour", 'getc1selected', 'getc2selected'])
   },
   methods:{ 
-      ...mapActions(["addSecondColour", "addFirstColour"]),
+      ...mapActions(["addSecondColour", "addFirstColour", 'addc1selected', 'addc2selected']),
+      all: function(event){
+        console.log(event)
+          this.addFirstColour(event);
+         
+          
+      },
+      all1: function(event){
+         console.log(event)
+          this.addSecondColour(event);
+         
+          console.log('hello')
+      },
+      color1: function(){
+        this.addc1selected()
+      },
+      color2: function(){
+        this.addc2selected()
+      }
      
   },
- 
+  data() {
+    return {
+        selected: false
+    }
+  }
 };
 </script>
 <style scoped>
@@ -33,5 +59,6 @@ export default {
   width: 2rem;
   border-radius: 0.3rem;
 }
+
 </style>
 

@@ -1,8 +1,8 @@
 const state = {
   percentage: 0,
   opacity: 0,
-  colour1: '',
-  colour2: '',
+  colour1: '#FF0000',
+  colour2: '#FF0000',
   c1selected: false,
   c2selected: false
 }
@@ -14,8 +14,7 @@ const getters = {
     getSecondColour: (state) => state.colour2,
     getc1selected: (state) => state.c1selected,
     getc2selected: (state) => state.c2selected,
-    getc1unselected: (state) => state.c1selected,
-    getc2unselected: (state) => state.c2selected
+  
 }
 
 const actions = {
@@ -62,10 +61,15 @@ const mutations = {
         state.colour2 = colour2;
     },
     setc1selected: (state) => {
+        
+       
         state.c1selected = true
+    
     },
     setc2selected: (state) => {
+     
         state.c2selected = true
+    
     },
     setc1unselected: (state) => {
         state.c1selected = false
