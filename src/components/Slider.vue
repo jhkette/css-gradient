@@ -14,7 +14,7 @@
         </v-col>
       </v-row>
     </v-card-text>
-    <p class="large">{{getPercentage}}</p>
+
   </div>
 </template>
 <script>

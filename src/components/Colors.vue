@@ -1,16 +1,24 @@
 <template>
   <div>
     <v-col class="d-flex justify-space-around">
-      <div v-if="getc1selected">
+      <div v-if="getc1selected" class="left">
         <div class="border">
-          <font-awesome-icon icon="times" class="cross" @click="addc1unselected" />
+          <font-awesome-icon
+            icon="times"
+            class="cross"
+            @click="addc1unselected"
+          />
 
           <v-color-picker @input="all"></v-color-picker>
         </div>
       </div>
-      <div v-if="getc2selected">
+      <div v-if="getc2selected" class="right">
         <div class="border">
-          <font-awesome-icon icon="times" class="cross" @click="addc2unselected" />
+          <font-awesome-icon
+            icon="times"
+            class="cross"
+            @click="addc2unselected"
+          />
           <v-color-picker @input="all1"></v-color-picker>
         </div>
       </div>
@@ -19,21 +27,33 @@
       <div
         class="swatch"
         id="swatch1"
-        v-bind:style="{backgroundColor: getFirstColour }"
+        v-bind:style="{ backgroundColor: getFirstColour }"
         @click="color2"
       ></div>
       <div
         class="swatch"
         id="swatch2"
-        v-bind:style="{backgroundColor: getSecondColour }"
+        v-bind:style="{ backgroundColor: getSecondColour }"
         @click="color1"
       ></div>
     </v-col>
-    <v-text-field  class="angle" label="angle" type="number" min="0" max="360" placeholder="90" 
-    @change="addAngle($event)"></v-text-field>
-    {{getc1selected}}
-    {{getc2selected}}
-    {{getAngle}}
+    <v-form ref="form" >
+      <!-- by putting the dollar sign we  are telling vue we want
+        the event object triggered by the specific event 'change' or whatever
+        we specified. In vanilla js we obviously don't need to do this -->
+     <input 
+        class="angle"
+        label="angle"
+        type="number"
+        min="0"
+        max="360"
+        placeholder="90"
+        v-model="angle1"
+      >
+      <v-btn color="success" class="mr-4" @click="addAngle(angle1)">
+        Add angle
+      </v-btn>
+    </v-form>
   </div>
 </template>
 <script>
@@ -46,8 +66,8 @@ export default {
       "getSecondColour",
       "getc1selected",
       "getc2selected",
-      "getAngle"
-    ])
+      "getAngle",
+    ]),
   },
 
   methods: {
@@ -58,10 +78,10 @@ export default {
       "addc2selected",
       "addc1unselected",
       "addc2unselected",
-      "addAngle"
+      "addAngle",
     ]),
-    consoleAngle: function(event){
-      console.log(event)
+    consoleAngle: function(event) {
+      console.log(event);
     },
     all: function(event) {
       console.log(event);
@@ -78,8 +98,17 @@ export default {
     },
     color2: function() {
       this.addc2selected();
-    }
-  }
+    },
+    recordAngle: function(event) {
+      this.recAngle = event;
+    
+    },
+  },
+  data() {
+    return {
+      recAngle: 90,
+    };
+  },
 };
 </script>
 <style scoped>
@@ -97,9 +126,14 @@ export default {
   border: 1px solid #f0e62ec2;
   border-radius: 0.25rem;
 }
-.angle{
+.angle {
   width: 4rem;
   margin-left: 10%;
 }
+.left{
+  align-self: start;
+}
+.right{
+  align-self: end;
+}
 </style>
-

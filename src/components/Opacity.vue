@@ -5,8 +5,9 @@
         <v-col class="pr-4">
           <v-slider
             class="align-center"
-            :max="max"
             :min="min"
+            :max="max"
+            
             hide-details
             thumb-label="always"
             @change="addOpacity"
@@ -14,7 +15,7 @@
         </v-col>
       </v-row>
     </v-card-text>
-    <p class="large">{{getOpacity}}</p>
+  
   </div>
 </template>
 <script>

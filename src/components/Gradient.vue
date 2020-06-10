@@ -1,8 +1,8 @@
 <template>
   <div>
-    {{renderOpacity}}
+   
     <div v-bind:style="{ background: backgroundString, opacity: renderOpacity}" class="gradient"></div>
-    {{ getPercentage }}
+ 
   </div>
 </template>
 
