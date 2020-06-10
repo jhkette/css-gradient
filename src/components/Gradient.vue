@@ -14,10 +14,11 @@ export default {
       "getPercentage",
       "getOpacity",
       "getFirstColour",
-      "getSecondColour"
+      "getSecondColour",
+      "getAngle"
     ]),
     backgroundString: function() {
-      return `${this.direction}(${this.degree}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
+      return `${this.direction}(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
     },
     renderOpacity: function() {
       if (this.getOpacity == 10) {

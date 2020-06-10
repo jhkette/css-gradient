@@ -4,7 +4,8 @@ const state = {
   colour1: '#FF0000',
   colour2: '#FF0000',
   c1selected: false,
-  c2selected: false
+  c2selected: false,
+  angle: 90
 }
 
 const getters = {
@@ -14,7 +15,7 @@ const getters = {
     getSecondColour: (state) => state.colour2,
     getc1selected: (state) => state.c1selected,
     getc2selected: (state) => state.c2selected,
-  
+    getAngle:(state) => state.angle 
 }
 
 const actions = {
@@ -41,6 +42,10 @@ const actions = {
     },
     addc2unselected: ({commit}) => {
         commit('setc2unselected')
+    },
+    addAngle: ({commit}, angle) => {
+        console.log(angle)
+        commit('setangle', angle)
     }
 
 
@@ -76,7 +81,11 @@ const mutations = {
     },
     setc2unselected: (state) => {
         state.c2selected = false
+    },
+    setangle: (state, angle) => {
+        state.angle = angle
     }
+
 
 }
 
