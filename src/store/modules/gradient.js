@@ -66,15 +66,10 @@ const mutations = {
         state.colour2 = colour2;
     },
     setc1selected: (state) => {
-        
-       
-        state.c1selected = true
-    
+         state.c1selected = true
     },
     setc2selected: (state) => {
-     
-        state.c2selected = true
-    
+        state.c2selected = true  
     },
     setc1unselected: (state) => {
         state.c1selected = false

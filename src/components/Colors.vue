@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-col class="d-flex justify-space-around">
-      <div v-if="getc1selected" class="left">
-        <div class="border">
+      <div  class="left">
+        <div class="border" v-if="getc1selected">
           <font-awesome-icon
             icon="times"
             class="cross"
@@ -12,8 +12,8 @@
           <v-color-picker @input="all"></v-color-picker>
         </div>
       </div>
-      <div v-if="getc2selected" class="right">
-        <div class="border">
+      <div  class="right">
+        <div class="border" v-if="getc2selected">
           <font-awesome-icon
             icon="times"
             class="cross"
@@ -131,9 +131,9 @@ export default {
   margin-left: 10%;
 }
 .left{
-  align-self: start;
+  width: 50%;
 }
 .right{
-  align-self: end;
+  width: 50%;
 }
 </style>
