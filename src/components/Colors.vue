@@ -1,7 +1,8 @@
 <template>
   <div>
-    <v-col class="d-flex justify-space-around">
-      <div  class="left">
+    <v-row class="mb-6 rel">
+      <!-- use absolute positioning -->
+      <div class="left-col">
         <div class="border" v-if="getc1selected">
           <font-awesome-icon
             icon="times"
@@ -9,20 +10,20 @@
             @click="addc1unselected"
           />
 
-          <v-color-picker @input="all"></v-color-picker>
+          <v-color-picker @input="all"  hide-inputs="true" width="170"></v-color-picker>
         </div>
       </div>
-      <div  class="right">
+      <div class="right-col">
         <div class="border" v-if="getc2selected">
           <font-awesome-icon
             icon="times"
             class="cross"
             @click="addc2unselected"
           />
-          <v-color-picker @input="all1"></v-color-picker>
+          <v-color-picker hide-inputs="true" width="170" @input="all1"></v-color-picker>
         </div>
       </div>
-    </v-col>
+    </v-row>
     <v-col class="d-flex justify-space-around">
       <div
         class="swatch"
@@ -122,7 +123,7 @@ export default {
 }
 .border {
   background-color: #fdfbd5c2;
-  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  padding: 1.2rem 1.2rem 2rem 1.2rem;
   border: 1px solid #f0e62ec2;
   border-radius: 0.25rem;
 }
@@ -130,10 +131,19 @@ export default {
   width: 4rem;
   margin-left: 10%;
 }
-.left{
-  width: 50%;
+.rel{
+  position: relative;
 }
-.right{
-  width: 50%;
+.left-col{
+  position: absolute;
+  right: 5rem;
+  top: -9.5rem;
+
+}
+.right-col{
+  position: absolute;
+  
+    left: 5rem;
+    top: -9.5rem;
 }
 </style>

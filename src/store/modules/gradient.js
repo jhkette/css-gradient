@@ -47,9 +47,6 @@ const actions = {
         console.log(angle)
         commit('setangle', angle)
     }
-
-
-
 }
 
 const mutations = {
