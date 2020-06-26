@@ -26,7 +26,7 @@
       </div>
     </v-row>
     <v-col class="d-flex justify-space-around">
-      <v-form ref="form" >
+      <v-form ref="form" class="form">
       <!-- by putting the dollar sign we  are telling vue we want
         the event object triggered by the specific event 'change' or whatever
         we specified. In vanilla js we obviously don't need to do this -->
@@ -115,6 +115,10 @@ export default {
 };
 </script>
 <style scoped>
+
+.form{
+  display: flex;
+}
 .swatch {
   height: 2rem;
   width: 2rem;
