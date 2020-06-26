@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-row class="mb-6 rel">
+       
       <!-- use absolute positioning -->
       <div class="left-col">
         <div class="border" v-if="getc1selected">
@@ -10,7 +11,7 @@
             @click="addc1unselected"
           />
 
-          <v-color-picker @input="all"  hide-inputs="true" width="170"></v-color-picker>
+          <v-color-picker @input="all"  hide-inputs="true" width="140"></v-color-picker>
         </div>
       </div>
       <div class="right-col">
@@ -20,25 +21,12 @@
             class="cross"
             @click="addc2unselected"
           />
-          <v-color-picker hide-inputs="true" width="170" @input="all1"></v-color-picker>
+          <v-color-picker hide-inputs="true" width="140" @input="all1"></v-color-picker>
         </div>
       </div>
     </v-row>
     <v-col class="d-flex justify-space-around">
-      <div
-        class="swatch"
-        id="swatch1"
-        v-bind:style="{ backgroundColor: getFirstColour }"
-        @click="color2"
-      ></div>
-      <div
-        class="swatch"
-        id="swatch2"
-        v-bind:style="{ backgroundColor: getSecondColour }"
-        @click="color1"
-      ></div>
-    </v-col>
-    <v-form ref="form" >
+      <v-form ref="form" >
       <!-- by putting the dollar sign we  are telling vue we want
         the event object triggered by the specific event 'change' or whatever
         we specified. In vanilla js we obviously don't need to do this -->
@@ -55,6 +43,20 @@
         Add angle
       </v-btn>
     </v-form>
+      <div
+        class="swatch"
+        id="swatch1"
+        v-bind:style="{ backgroundColor: getFirstColour }"
+        @click="color2"
+      ></div>
+      <div
+        class="swatch"
+        id="swatch2"
+        v-bind:style="{ backgroundColor: getSecondColour }"
+        @click="color1"
+      ></div>
+    </v-col>
+   
   </div>
 </template>
 <script>
@@ -117,14 +119,16 @@ export default {
   height: 2rem;
   width: 2rem;
   border-radius: 0.3rem;
+  border: 4px solid #202020
 }
 .cross {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 .border {
-  background-color: #fdfbd5c2;
-  padding: 1.2rem 1.2rem 2rem 1.2rem;
-  border: 1px solid #f0e62ec2;
+  background-color: #f0f0f0c2;
+  padding: 1rem;
+  border: 1px solid #696969c2;
   border-radius: 0.25rem;
 }
 .angle {

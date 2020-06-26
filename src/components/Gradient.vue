@@ -1,8 +1,8 @@
 <template>
   <div>
-   
+   <div class ="border">
     <div v-bind:style="{ background: backgroundString, opacity: renderOpacity}" class="gradient"></div>
- 
+    </div>
   </div>
 </template>
 
@@ -37,9 +37,17 @@ export default {
 };
 </script>
 <style scoped>
-.gradient {
-  width: 80%;
+.border{
+   width: 80%;
   margin: 5rem auto;
-  height: 8rem;
+  height: 5rem;
+  border: 5px solid #0e0e0e;
+  border-radius: 5px;
+
+}
+.gradient {
+  width: 100%;
+  height: 100%;
+ 
 }
 </style>
