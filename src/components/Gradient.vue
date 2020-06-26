@@ -39,8 +39,8 @@ export default {
 <style scoped>
 .border{
    width: 80%;
-  margin: 5rem auto;
-  height: 5rem;
+  margin: 3rem auto 2rem auto;
+  height: 6rem;
   border: 5px solid #0e0e0e;
   border-radius: 5px;
 

@@ -39,7 +39,7 @@
         placeholder="90"
         v-model="angle1"
       >
-      <v-btn color="success" class="mr-4" @click="addAngle(angle1)">
+      <v-btn color="primary" class="mr-4 button" @click="addAngle(angle1)">
         Add angle
       </v-btn>
     </v-form>
@@ -120,8 +120,8 @@ export default {
   display: flex;
 }
 .swatch {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 0.3rem;
   border: 4px solid #202020
 }
@@ -136,8 +136,9 @@ export default {
   border-radius: 0.25rem;
 }
 .angle {
-  width: 4rem;
+  width: 3rem;
   margin-left: 10%;
+  margin-right: 3rem;
 }
 .rel{
   position: relative;
@@ -153,5 +154,8 @@ export default {
   
     left: 5rem;
     top: -9.5rem;
+}
+.button{
+  margin-top: .4rem;
 }
 </style>
