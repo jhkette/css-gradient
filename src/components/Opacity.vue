@@ -42,7 +42,7 @@ h3{
  
   font-family: "Open sans";
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   
 }
 .slider-container {
