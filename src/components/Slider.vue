@@ -20,6 +20,7 @@
 </template>
 <script>
 import { mapActions, mapGetters } from "vuex";
+import (/* webpackPreload: true */ 'typeface-open-sans/index.css')
 export default {
   name: "Slider",
   data() {
@@ -38,7 +39,11 @@ export default {
 h3{
   margin-bottom: 2.5rem;
   display: inline-block;
-  border-bottom: 3px solid black;;
+ 
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 1.3rem;
+  
 }
 .slider-container {
   width: 80%;
