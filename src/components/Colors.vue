@@ -123,7 +123,8 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.3rem;
-  border: 4px solid #202020
+  border: 2px solid #202020;
+  cursor: pointer;
 }
 .cross {
   font-size: 1.8rem;

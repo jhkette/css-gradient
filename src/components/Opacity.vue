@@ -41,7 +41,7 @@ h3{
   display: inline-block;
  
   font-family: "Open sans";
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.1rem;
   
 }
