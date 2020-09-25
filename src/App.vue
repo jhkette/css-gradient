@@ -35,6 +35,7 @@ export default {
 };
 </script>
 <style scoped>
+
 h1{
   font-family: 'Source sans pro';
   font-weight: 700;

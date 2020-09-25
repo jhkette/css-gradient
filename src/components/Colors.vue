@@ -122,7 +122,7 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.3rem;
-  border: 2px solid #202020;
+  border: 3px solid #202020;
   cursor: pointer;
 }
 .cross {

@@ -40,9 +40,9 @@ h3{
   margin-bottom: 2.5rem;
   display: inline-block;
  
-  font-family: "Open sans";
-  font-weight: 300;
-  font-size: 1.1rem;
+  font-family: "Source sans pro";
+  font-weight: 600;
+  font-size: 1.5rem;
   
 }
 .slider-container {
