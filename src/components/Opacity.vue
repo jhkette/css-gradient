@@ -8,7 +8,7 @@
             class="align-center"
             :min="min"
             :max="max"
-            
+             v-model="num"
             hide-details
             thumb-label="always"
             @change="addOpacity"
@@ -27,7 +27,8 @@ export default {
   data() {
     return {
       min: 0,
-      max: 10
+      max: 10,
+      num: 5
     };
   },
   methods: mapActions(["addOpacity"]),

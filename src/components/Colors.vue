@@ -3,7 +3,7 @@
     <v-row class="mb-6 rel">
        
       <!-- use absolute positioning -->
-      <div class="left-col">
+      <div class="right-col">
         <div class="border" v-if="getc1selected">
           <font-awesome-icon
             icon="times"
@@ -14,7 +14,7 @@
           <v-color-picker @input="all"  hide-inputs="true" width="140"></v-color-picker>
         </div>
       </div>
-      <div class="right-col">
+      <div class="left-col">
         <div class="border" v-if="getc2selected">
           <font-awesome-icon
             icon="times"
@@ -37,9 +37,9 @@
         min="0"
         max="360"
         placeholder="90"
-        v-model="angle1"
+        v-model="angle"
       >
-      <v-btn color="primary" class="mr-4 button" @click="addAngle(angle1)">
+      <v-btn color="primary" class="mr-4 button" @click="addAngle(angle)">
         Add angle
       </v-btn>
     </v-form>
@@ -47,13 +47,13 @@
         class="swatch"
         id="swatch1"
         v-bind:style="{ backgroundColor: getFirstColour }"
-        @click="color2"
+        @click="color1"
       ></div>
       <div
         class="swatch"
         id="swatch2"
         v-bind:style="{ backgroundColor: getSecondColour }"
-        @click="color1"
+        @click="color2"
       ></div>
     </v-col>
    
@@ -63,6 +63,9 @@
 import { mapGetters, mapActions } from "vuex";
 // https://codepen.io/JamieCurnow/pen/KKPjraK
 export default {
+  components: {
+
+  },
   computed: {
     ...mapGetters([
       "getFirstColour",
@@ -83,9 +86,7 @@ export default {
       "addc2unselected",
       "addAngle",
     ]),
-    consoleAngle: function(event) {
-      console.log(event);
-    },
+    
     all: function(event) {
       console.log(event);
       this.addFirstColour(event);
@@ -93,8 +94,6 @@ export default {
     all1: function(event) {
       console.log(event);
       this.addSecondColour(event);
-
-      console.log("hello");
     },
     color1: function() {
       this.addc1selected();

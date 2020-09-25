@@ -1,6 +1,6 @@
 const state = {
   percentage: 0,
-  opacity: 0,
+  opacity: 5,
   colour1: '#FF0000',
   colour2: '#FF0000',
   c1selected: false,
@@ -44,7 +44,7 @@ const actions = {
         commit('setc2unselected')
     },
     addAngle: ({commit}, angle) => {
-        console.log(angle)
+        
         commit('setangle', angle)
     }
 }
