@@ -8,6 +8,7 @@
       <Colors></Colors>
       <Slider></Slider>
       <Opacity></Opacity>
+      <Modal></Modal>
       
     </div>
   </v-app>
@@ -20,6 +21,7 @@ import Topbar from "./components/TopBar";
 import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
+import Modal from "./components/Modal";
 import (/* webpackPreload: true */ 'typeface-source-sans-pro/index.css');
 
 export default {
@@ -30,7 +32,8 @@ export default {
     Opacity,
     Gradient,
     Colors,
-    Topbar
+    Topbar, 
+    Modal
   },
 };
 </script>
