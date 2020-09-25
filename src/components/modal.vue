@@ -1,15 +1,15 @@
 <template>
   <div class="text-center">
     <v-dialog
-      v-model="dialog"
+      
       width="500"
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="red lighten-2"
-          dark
+          class="ma-2" outlined color="blue"
           v-bind="attrs"
           v-on="on"
+          
         >
           Click Me
         </v-btn>
@@ -20,26 +20,61 @@
           class="headline grey lighten-2"
           primary-title
         >
-          Privacy Policy
+         CSS 
         </v-card-title>
-
+          
         <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {{backgroundString}}
+          opacity: {{renderOpacity}}
         </v-card-text>
 
         <v-divider></v-divider>
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn
-            color="primary"
-            text
-            @click="dialog = false"
-          >
-            I accept
-          </v-btn>
+          <v-btn class="ma-2" outlined color="blue" @click="copyText">Copy</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
 </template>
+
+
+<script>
+import { mapGetters } from "vuex";
+export default {
+  computed: {
+    ...mapGetters([
+      "getPercentage",
+      "getOpacity",
+      "getFirstColour",
+      "getSecondColour",
+      "getAngle"
+    ]),
+    backgroundString: function() {
+      return `background: ${this.direction}(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%);`;
+    },
+    renderOpacity: function() {
+      if (this.getOpacity == 10) {
+        return 1;
+      }
+      return `0.${this.getOpacity};`;
+    }
+  },
+  methods: {
+        copyText () {
+          let textToCopy = this.$refs.textToCopy.$el.querySelector('input')
+          textToCopy.select()
+          document.execCommand("copy");
+        }
+      },
+  data: function() {
+    return {
+      direction: "linear-gradient",
+     
+    };
+  }
+  
+  
+}
+</script>

@@ -39,7 +39,7 @@
         placeholder="90"
         v-model="angle"
       >
-      <v-btn color="primary" class="mr-4 button" @click="addAngle(angle)">
+      <v-btn class="ma-2" outlined color="blue" @click="addAngle(angle)">
         Add angle
       </v-btn>
     </v-form>
@@ -75,6 +75,7 @@ export default {
       "getAngle",
     ]),
   },
+ 
 
   methods: {
     ...mapActions([

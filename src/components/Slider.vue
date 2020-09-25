@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 h3{
-  margin-bottom: 2.5rem;
+
   display: inline-block;
  
   font-family: "Source sans pro";

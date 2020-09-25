@@ -15,7 +15,7 @@
 </template>
 
 <script>
-
+import './assets/css/main.css'
 import Gradient from "./components/Gradient";
 import Topbar from "./components/TopBar";
 import Slider from "./components/Slider";
@@ -41,9 +41,9 @@ export default {
 
 h1{
   font-family: 'Source sans pro';
-  font-weight: 700;
-  padding-bottom: 5px;
-  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 2.7rem;
 
   display: inline-block;
 }

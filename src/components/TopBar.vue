@@ -13,7 +13,7 @@
 <style scoped>
   .topbar{
       width: 100%;
-      height: 3.7rem;
+      height: 4rem;
       background-color: #24292e;
   }
 
