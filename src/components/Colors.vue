@@ -145,14 +145,14 @@ export default {
 }
 .left-col{
   position: absolute;
-  right: 5rem;
+  right: -5rem;
   top: -9.5rem;
 
 }
 .right-col{
   position: absolute;
   
-    left: 5rem;
+    left: 1rem;
     top: -9.5rem;
 }
 .button{

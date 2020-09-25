@@ -28,7 +28,7 @@ export default {
     return {
       min: 0,
       max: 10,
-      num: 5
+      num: 10
     };
   },
   methods: mapActions(["addOpacity"]),

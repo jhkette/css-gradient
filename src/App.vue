@@ -1,5 +1,7 @@
 <template>
+
   <v-app>
+    <Topbar></Topbar>
     <div class="container" >
       <h1>CSS Gradient Generator</h1>
       <Gradient></Gradient>
@@ -14,10 +16,11 @@
 <script>
 
 import Gradient from "./components/Gradient";
+import Topbar from "./components/TopBar";
 import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
-import (/* webpackPreload: true */ 'typeface-open-sans/index.css');
+import (/* webpackPreload: true */ 'typeface-source-sans-pro/index.css');
 
 export default {
   name: "App",
@@ -26,23 +29,21 @@ export default {
     Slider,
     Opacity,
     Gradient,
-    Colors
+    Colors,
+    Topbar
   },
 };
 </script>
 <style scoped>
 h1{
-  font-family: 'Open sans';
-  font-weight: 300;
+  font-family: 'Source sans pro';
+  font-weight: 700;
   padding-bottom: 5px;
-  border-bottom: 2px solid rgb(36, 36, 36);
+  font-size: 3rem;
+
   display: inline-block;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  
-}
+
 .cross{
   color: red;
   font-size: 2rem;

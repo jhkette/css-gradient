@@ -1,6 +1,6 @@
 const state = {
   percentage: 0,
-  opacity: 5,
+  opacity: 10,
   colour1: '#FF0000',
   colour2: '#FF0000',
   c1selected: false,
