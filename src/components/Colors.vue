@@ -123,7 +123,7 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.3rem;
-  border: 3px solid #202020;
+  border: 3px solid #24292E;
   cursor: pointer;
 }
 .cross {
@@ -131,15 +131,16 @@ export default {
   cursor: pointer;
 }
 .border {
-  background-color: #f0f0f0c2;
+  background-color: #ebebeb;
   padding: 1rem;
-  border: 1px solid #696969c2;
+  border: 2px solid #24292E;
   border-radius: 0.25rem;
 }
 .angle {
   width: 3rem;
   margin-left: 10%;
   margin-right: 3rem;
+  font-size: 1.15rem;
 }
 .rel{
   position: relative;
@@ -153,8 +154,9 @@ export default {
 .right-col{
   position: absolute;
   
-    left: 1rem;
+    left: 21rem;
     top: -9.5rem;
+    z-index: 900;
 }
 .button{
   margin-top: .4rem;

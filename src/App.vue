@@ -1,28 +1,33 @@
 <template>
-
   <v-app>
     <Topbar></Topbar>
-    <div class="container" >
+    <div class="container">
       <h1>CSS Gradient Generator</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptatibus libero praesentium minima neque illum. Officia quos ipsam facilis cupiditate numquam eligendi consequatur, animi, at, dolorem atque veniam ducimus ex?</p>
+      
       <Gradient></Gradient>
       <Colors></Colors>
+      <div class="cont">
+        <div class="sliders">
       <Slider></Slider>
       <Opacity></Opacity>
-      <Modal></Modal>
-      
+        </div>
+        <div class="mod">
+      <Modal></Modal></div>
+      </div>
     </div>
   </v-app>
 </template>
 
 <script>
-import './assets/css/main.css'
+import "./assets/css/main.css";
 import Gradient from "./components/Gradient";
 import Topbar from "./components/TopBar";
 import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
 import Modal from "./components/Modal";
-import (/* webpackPreload: true */ 'typeface-source-sans-pro/index.css');
+import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
   name: "App",
@@ -32,15 +37,14 @@ export default {
     Opacity,
     Gradient,
     Colors,
-    Topbar, 
-    Modal
+    Topbar,
+    Modal,
   },
 };
 </script>
 <style scoped>
-
-h1{
-  font-family: 'Source sans pro';
+h1 {
+  font-family: "Source sans pro";
   font-weight: 600;
   margin-top: 1rem;
   font-size: 2.7rem;
@@ -48,8 +52,17 @@ h1{
   display: inline-block;
 }
 
-.cross{
+.cross {
   color: red;
   font-size: 2rem;
+}
+.sliders{
+ width: 80%;
+ display: inline-block;
+}
+.mod{
+  width: 20%;
+  float: right;
+  margin-top: 6rem;
 }
 </style>

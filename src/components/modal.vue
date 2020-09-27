@@ -9,9 +9,10 @@
           class="ma-2" outlined color="blue"
           v-bind="attrs"
           v-on="on"
+          large
           
         >
-          Click Me
+          Get some css
         </v-btn>
       </template>
 

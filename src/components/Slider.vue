@@ -36,17 +36,20 @@ export default {
 </script>
 
 <style scoped>
+.align-center{
+  width: 90%;
+}
 h3{
 
   display: inline-block;
- 
+ margin-bottom: 2rem;
   font-family: "Source sans pro";
   font-weight: 600;
   font-size: 1.5rem;
   
 }
 .slider-container {
-  width: 80%;
+  width: 100%;
   margin: 2.5rem auto;
 }
 .large {

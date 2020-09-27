@@ -1,9 +1,14 @@
 html, body{
     padding: 0;
     margin: 0;
+    font-size: 62.5%;
 }
 
 
 #app{
-    background-color: #f1f1f1;
+    background-color: #eaeaea;
+}
+
+p{
+    font-size: 1.15rem;
 }

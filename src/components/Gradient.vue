@@ -41,7 +41,7 @@ export default {
    width: 100%;
   margin: 2rem auto 0rem auto;
   height: 6.5rem;
-  border: 4px solid #0e0e0e;
+  border: 4px solid #24292E;
   border-radius: 5px;
 
 }
