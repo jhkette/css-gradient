@@ -25,8 +25,7 @@
         </v-card-title>
           
         <v-card-text>
-          {{backgroundString}}
-          opacity: {{renderOpacity}}
+          <p>{{backgroundString}} opacity: {{renderOpacity}}</p>
         </v-card-text>
 
         <v-divider></v-divider>
