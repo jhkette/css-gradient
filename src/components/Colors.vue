@@ -122,7 +122,7 @@ export default {
 .swatch {
   height: 2.5rem;
   width: 2.5rem;
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   border: 3px solid #24292E;
   cursor: pointer;
 }
