@@ -119,6 +119,7 @@ export default {
 .form{
   display: flex;
 }
+/* hello */
 .swatch {
   height: 2.5rem;
   width: 2.5rem;
