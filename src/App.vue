@@ -26,7 +26,7 @@ import Topbar from "./components/TopBar";
 import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
-import Modal from "./components/Modal";
+import Modal from "./components/modal";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
