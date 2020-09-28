@@ -40,9 +40,10 @@ export default {
 .border{
    width: 100%;
   margin: 2rem auto 0rem auto;
-  height: 6.5rem;
-  border: 4px solid #24292E;
-  border-radius: 5px;
+  height: 15rem;
+  border-top: 2px solid #24292E;
+  border-bottom: 2px solid #24292E;
+ 
 
 }
 .gradient {

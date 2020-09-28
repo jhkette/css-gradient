@@ -16,7 +16,6 @@
         </v-col>
       </v-row>
     </v-card-text>
-  
   </div>
 </template>
 <script>

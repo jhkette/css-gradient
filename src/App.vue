@@ -1,19 +1,27 @@
 <template>
   <v-app>
     <Topbar></Topbar>
-    <div class="container">
+    <div class="cont">
+      <section class="heading"> 
       <h1>CSS Gradient Generator</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptatibus libero praesentium minima neque illum. Officia quos ipsam facilis cupiditate numquam eligendi consequatur, animi, at, dolorem atque veniam ducimus ex?</p>
-      
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
+        voluptatibus libero praesentium minima neque illum. Officia quos ipsam
+        facilis cupiditate numquam eligendi consequatur, animi, at, dolorem
+        atque veniam ducimus ex?
+      </p>
+      </section>
       <Gradient></Gradient>
+      <div class="cont-small">
       <Colors></Colors>
-      <div class="cont">
+      
         <div class="sliders">
-      <Slider></Slider>
-      <Opacity></Opacity>
+          <Slider></Slider>
+          <Opacity></Opacity>
         </div>
         <div class="mod">
-      <Modal></Modal></div>
+          <Modal></Modal>
+        </div>
       </div>
     </div>
   </v-app>
@@ -48,19 +56,32 @@ h1 {
   font-weight: 600;
   margin-top: 1rem;
   font-size: 2.7rem;
-
   display: inline-block;
+}
+.cont-small{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -7rem;
+  background-color: #eaeaea;
+  border-radius: 1rem;
+  
+
+}
+.heading{
+  width: 80%;
+  margin: auto;
 }
 
 .cross {
   color: red;
   font-size: 2rem;
 }
-.sliders{
- width: 80%;
- display: inline-block;
+.sliders {
+  width: 80%;
+  display: inline-block;
 }
-.mod{
+.mod {
   width: 20%;
   float: right;
   margin-top: 6rem;
