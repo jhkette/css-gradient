@@ -62,10 +62,10 @@ h1 {
   width: 80%;
   margin: auto;
   position: relative;
-  top: -7rem;
+  top: -9.5rem;
   background-color: #eaeaea;
   border-radius: 1rem;
-  
+  padding: 2rem; 
 
 }
 .heading{
