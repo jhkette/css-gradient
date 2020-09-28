@@ -40,7 +40,7 @@ export default {
 .border{
    width: 100%;
   margin: 2rem auto 0rem auto;
-  height: 15rem;
+  height: 17rem;
   border-top: 2px solid #24292E;
   border-bottom: 2px solid #24292E;
  

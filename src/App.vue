@@ -2,7 +2,11 @@
   <v-app>
     <Topbar></Topbar>
     <div class="cont">
-      <section class="heading"> 
+      <section class="heading">
+         <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>  
       <h1>CSS Gradient Generator</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
@@ -58,15 +62,23 @@ h1 {
   font-size: 2.7rem;
   display: inline-block;
 }
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
 .cont-small{
   width: 80%;
   margin: auto;
   position: relative;
   top: -10rem;
-  background-color: #eaeaea;
+  background-color: #e6e6e6;
   border-radius: 1rem;
   padding: 2rem; 
-  border: 2px solid #24292e;
+  
 
 }
 .heading{
