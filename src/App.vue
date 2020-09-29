@@ -2,23 +2,10 @@
   <v-app>
     <Topbar></Topbar>
     <div class="cont">
-      <section class="heading">
-         <span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>  
-      <h1>CSS Gradient Generator</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
-        voluptatibus libero praesentium minima neque illum. Officia quos ipsam
-        facilis cupiditate numquam eligendi consequatur, animi, at, dolorem
-        atque veniam ducimus ex?
-      </p>
-      </section>
+      <CirclesBg></CirclesBg>
       <Gradient></Gradient>
       <div class="cont-small">
-      <Colors></Colors>
-      
+        <Colors></Colors>
         <div class="sliders">
           <Slider></Slider>
           <Opacity></Opacity>
@@ -39,6 +26,7 @@ import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
 import Modal from "./components/modal";
+import CirclesBg from "./components/CirclesBg";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
@@ -51,17 +39,11 @@ export default {
     Colors,
     Topbar,
     Modal,
+    CirclesBg,
   },
 };
 </script>
 <style scoped>
-h1 {
-  font-family: "Source sans pro";
-  font-weight: 600;
-  margin-top: 1rem;
-  font-size: 2.7rem;
-  display: inline-block;
-}
 .dot {
   height: 25px;
   width: 25px;
@@ -70,20 +52,14 @@ h1 {
   display: inline-block;
   position: relative;
 }
-.cont-small{
+.cont-small {
   width: 80%;
   margin: auto;
   position: relative;
   top: -10rem;
   background-color: #e6e6e6;
   border-radius: 1rem;
-  padding: 2rem; 
-  
-
-}
-.heading{
-  width: 80%;
-  margin: auto;
+  padding: 2rem;
 }
 
 .cross {
