@@ -8,11 +8,19 @@
       facilis cupiditate numquam eligendi consequatur, animi, at, dolorem atque
       veniam ducimus ex?
     </p>
+      
+      <Circle1 v-for="colour in colours" :key="colour" v-bind:colour="colour"> </Circle1>
+    
   </section>
 </template>
 
 <script>
+import Circle1 from './Circle'
 export default {
+  
+  components:{
+    Circle1
+  },
   // https://stackoverflow.com/questions/47219272/how-can-i-use-window-size-in-vue-how-do-i-detect-the-soft-keyboard
   data: function() {
     return {
@@ -60,5 +68,6 @@ h1 {
 .heading {
   width: 80%;
   margin: auto;
+  position: relative;
 }
 </style>
