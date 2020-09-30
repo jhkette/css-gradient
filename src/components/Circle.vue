@@ -1,5 +1,14 @@
 <template>
-  <div class="circle" :style="{background: bgstyle, top: height, left: newwidth, width: diameter, height: diameter }">
+  <div
+    class="circle"
+    :style="{
+      background: bgstyle,
+      top: height,
+      left: newwidth,
+      width: diameter,
+      height: diameter,
+    }"
+  >
     <!-- <p>{{colour}}</p> -->
   </div>
 </template>
@@ -7,23 +16,31 @@
 <script>
 export default {
   props: ["colour"],
+  data: function() {
+    return {
+       winWidth: null,
+      winHeight: null,
+
+    }
+
+  },
   computed: {
-    bgstyle () {
-      return "linear-gradient(to right bottom," + this.colour +")";
+    bgstyle() {
+      return "linear-gradient(to right bottom," + this.colour + ")";
     },
- 
     diameter() {
-      return Math.random() * (120 - 40) + 40 +'px';
+      return Math.random() * (120 - 40) + 40 + "px";
     },
     height() {
-      return Math.round(Math.random() * 200)+ 'px';
+      return Math.round(Math.random() * this.winHeight) + "px";
     },
     newwidth() {
-      return Math.round(Math.random() * this.winWidth)+'px';
+      return Math.round(Math.random() * this.winWidth) + "px";
     },
   },
   created() {
     this.winWidth = window.innerWidth;
+    this.winHeight = window.innerHeight;
   },
 };
 </script>
@@ -36,9 +53,7 @@ export default {
   border-radius: 50%;
   display: "inline-block";
   position: absolute;
-  background-color: blue;
-  /* height: 3rem;
-  width: 3rem; */
+
 }
 .circles {
   background: "linear-gradient(to right bottom," + bgColor + ")";
