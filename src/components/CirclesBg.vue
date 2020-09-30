@@ -25,9 +25,9 @@ export default {
 <style scoped>
 h1 {
   font-family: "Source sans pro";
-  font-weight: 600;
+  font-weight: 300;
   margin-top: 1rem;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   display: inline-block;
 }
 .heading {

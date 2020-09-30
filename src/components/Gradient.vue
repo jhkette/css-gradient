@@ -45,14 +45,15 @@ export default {
   background-color: white;
   position: relative;
   z-index: 10;
+   border-top: 2px solid #24292E;
+  border-bottom: 2px solid #24292E;
 
 }
 .border{
    width: 100%;
   margin: 2rem auto 0rem auto;
-  height: 17rem;
-  border-top: 2px solid #24292E;
-  border-bottom: 2px solid #24292E;
+  height: 20rem;
+ 
   z-index: 10;
   position: relative;
  

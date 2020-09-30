@@ -75,7 +75,7 @@ export default {
   width: 75%;
   margin: auto;
   position: relative;
-  top: -10rem;
+  top: -15rem;
   background-color: #e6e6e6;
   border-radius: 1rem;
   padding: 2rem;

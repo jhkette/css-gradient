@@ -44,8 +44,8 @@ h3{
   display: inline-block;
  
   font-family: "Source sans pro";
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1.35rem;
   
 }
 .slider-container {
