@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <Circle1 v-for="colour in colours" :key="colour" :colour="colour"> </Circle1>
     <Topbar></Topbar>
     <div class="cont">
       <CirclesBg></CirclesBg>
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+import Circle1 from './components/Circle'
 import "./assets/css/main.css";
 import Gradient from "./components/Gradient";
 import Topbar from "./components/TopBar";
@@ -40,6 +42,23 @@ export default {
     Topbar,
     Modal,
     CirclesBg,
+    Circle1
+  },
+    data: function() {
+    return {
+      colours: [
+        "#E94F37, #bb2d50",
+        "#1C89BF, #e3f7ff",
+        "#A1D363, #90ee90",
+        "#85FFC7, #3cb371",
+        "#297373, #2f4f4f",
+        "#FF8552, #fdc888",
+        "#A40E4C ,#ffc2c2",
+        "#E94F37, #bb2d50",
+        "#1C89BF, #e3f7ff",
+        "#ddd, #90ee90",
+      ],
+    };
   },
 };
 </script>
@@ -53,13 +72,14 @@ export default {
   position: relative;
 }
 .cont-small {
-  width: 80%;
+  width: 75%;
   margin: auto;
   position: relative;
   top: -10rem;
   background-color: #e6e6e6;
   border-radius: 1rem;
   padding: 2rem;
+  z-index: 100;
 }
 
 .cross {

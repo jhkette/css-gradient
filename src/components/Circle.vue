@@ -29,7 +29,7 @@ export default {
       return "linear-gradient(to right bottom," + this.colour + ")";
     },
     diameter() {
-      return Math.random() * (120 - 40) + 40 + "px";
+      return Math.random() * (220 - 70) + 70 + "px";
     },
     height() {
       return Math.round(Math.random() * this.winHeight) + "px";

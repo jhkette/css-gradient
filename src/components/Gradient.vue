@@ -1,7 +1,9 @@
 <template>
-  <div>
+ 
    <div class ="border">
+     <div class="bg">
     <div v-bind:style="{ background: backgroundString, opacity: renderOpacity}" class="gradient"></div>
+    <div/>
     </div>
   </div>
 </template>
@@ -37,18 +39,29 @@ export default {
 };
 </script>
 <style scoped>
+.bg{
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+
+}
 .border{
    width: 100%;
   margin: 2rem auto 0rem auto;
   height: 17rem;
   border-top: 2px solid #24292E;
   border-bottom: 2px solid #24292E;
+  z-index: 10;
+  position: relative;
  
 
 }
 .gradient {
   width: 100%;
   height: 100%;
+  
  
 }
 </style>
