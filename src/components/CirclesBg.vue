@@ -9,7 +9,7 @@
       veniam ducimus ex?
     </p>
       
-      <Circle1 v-for="colour in colours" :key="colour" v-bind:colour="colour"> </Circle1>
+      <Circle1 v-for="colour in colours" :key="colour" :colour="colour"> </Circle1>
     
   </section>
 </template>
@@ -34,26 +34,13 @@ export default {
         "#A40E4C ,#ffc2c2",
         "#E94F37, #bb2d50",
         "#1C89BF, #e3f7ff",
-        "#A1D363, #90ee90",
+        "#ddd, #90ee90",
       ],
       winWidth: null,
       winHeight: 10,
     };
   },
-  computed: {
-    diameter() {
-      return Math.random() * (120 - 40) + 40;
-    },
-    height() {
-      return Math.round(Math.random() * this.winHeight);
-    },
-    newwidth() {
-      return Math.round(Math.random() * this.winWidth);
-    },
-  },
-  created() {
-    this.winWidth = window.innerWidth;
-  },
+ 
 };
 </script>
 
