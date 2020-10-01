@@ -39,7 +39,7 @@
         placeholder="90"
         v-model="angle"
       >
-      <v-btn class="ma-2" outlined color="blue" @click="addAngle(angle)">
+      <v-btn class="ma-2" color="secondary" @click="addAngle(angle)">
         Add angle
       </v-btn>
     </v-form>

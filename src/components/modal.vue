@@ -5,11 +5,10 @@
       width="500"
     >
       <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          class="ma-2" outlined color="blue"
+      <v-btn class="ma-2" color="secondary"
           v-bind="attrs"
           v-on="on"
-          large
+         
           
         >
           Get some css
@@ -32,7 +31,7 @@
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="ma-2" outlined color="blue" @click="copyText">Copy</v-btn>
+          <v-btn class="ma-2" color="secondary" @click="copyText">Copy</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
