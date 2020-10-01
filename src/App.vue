@@ -75,11 +75,13 @@ export default {
   width: 75%;
   margin: auto;
   position: relative;
-  top: -15rem;
-  background-color: #e6e6e6;
+  top: -16.5rem;
+  background-color: #EAEAEA;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 4rem;
   z-index: 100;
+  border: 2px solid #24292E;
+
 }
 
 .cross {

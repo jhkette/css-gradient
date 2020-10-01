@@ -1,8 +1,8 @@
 const state = {
   percentage: 0,
   opacity: 10,
-  colour1: '#FF0000',
-  colour2: '#FF0000',
+  colour1: '#0063FF',
+  colour2: '#FFFFFF',
   c1selected: false,
   c2selected: false,
   angle: 90
