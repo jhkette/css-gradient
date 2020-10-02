@@ -35,7 +35,7 @@ export default {
       return Math.round(Math.random() * this.winHeight) + "px";
     },
     newwidth() {
-      return Math.round(Math.random() * this.winWidth) + "px";
+      return Math.round(Math.random() * this.winWidth - 220) + "px";
     },
   },
   created() {

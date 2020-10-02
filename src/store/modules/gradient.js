@@ -77,8 +77,6 @@ const mutations = {
     setangle: (state, angle) => {
         state.angle = angle
     }
-
-
 }
 
 export default {

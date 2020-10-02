@@ -9,6 +9,7 @@ body {
 #app {
     background-color: #eaeaea;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 p {
