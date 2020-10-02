@@ -10,7 +10,7 @@
             :max="max"
              v-model="num"
             hide-details
-            thumb-label="always"
+            thumb-label
             @change="addOpacity"
           ></v-slider>
         </v-col>
@@ -50,7 +50,7 @@ h3{
 }
 .slider-container {
   width: 100%;
-  margin: 2.5rem auto;
+  margin: 1rem auto;
 }
 .row_np{
   padding: 0;

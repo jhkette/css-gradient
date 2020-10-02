@@ -10,12 +10,13 @@
             :min="min"
            
             hide-details
-            thumb-label="always"
+            thumb-label
             @change="addPercentage"
           ></v-slider>
         </v-col>
       </v-row>
     </v-card-text>
+    
 
   </div>
 </template>
@@ -52,7 +53,7 @@ h3{
 }
 .slider-container {
   width: 100%;
-  margin: 2.5rem auto;
+  margin: 1rem auto;
 }
 .large {
   font-size: 80px;

@@ -56,7 +56,7 @@ export default {
     },
     renderOpacity: function() {
       if (this.getOpacity == 10) {
-        return 1;
+        return 1+';';
       }
       return `0.${this.getOpacity};`;
     }

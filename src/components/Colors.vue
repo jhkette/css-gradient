@@ -26,6 +26,7 @@
       </div>
     </v-row>
     <v-col class="d-flex justify-space-around">
+      
       <v-form ref="form" class="form">
       <!-- by putting the dollar sign we  are telling vue we want
         the event object triggered by the specific event 'change' or whatever
@@ -43,6 +44,7 @@
         Add angle
       </v-btn>
     </v-form>
+   
       <div
         class="swatch"
         id="swatch1"
@@ -55,6 +57,7 @@
         v-bind:style="{ backgroundColor: getSecondColour }"
         @click="color2"
       ></div>
+      
     </v-col>
    
   </div>

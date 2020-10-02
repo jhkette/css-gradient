@@ -1,6 +1,9 @@
 <template>
   <div class="topbar">
+    <header class="inner">
     <h1>CSS Gradient Generator</h1>
+    <a href=""><img src="../assets/github.png" alt="github"/></a>
+    </header>
   </div>
 </template>
 
@@ -13,18 +16,33 @@ h1 {
   font-family: "Source sans pro";
   font-weight: 600;
 
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #fff;
 
   z-index: 11;
+  margin-top: .45rem;
+}
+img {
+    height: 2rem;
+     margin-top: .75rem;
+}
+a{
+    text-decoration: none;
+    border: 0;
+}
 
+.inner{
+     display: flex;
+  justify-content: space-between;
   width: 80%;
-  margin: 1rem auto 0 auto;
+  margin: auto;
+
 }
 .topbar {
   width: 100%;
-  height: 5.5rem;
+  height: 3.5rem;
   background-color: #24292e;
   z-index: 10;
+ 
 }
 </style>
