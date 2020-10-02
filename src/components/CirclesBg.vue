@@ -4,7 +4,7 @@
 
     
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi earum aliquam explicabo ex, ratione et necessitatibus, est, velit cum nam nihil eveniet facere nobis? Ea est pariatur aperiam accusamus.
     </p>
   </section>
 </template>
