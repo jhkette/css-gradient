@@ -3,11 +3,12 @@
     <v-card-text class="row_np">
       <v-row>
         <v-col class="pr-4">
-          <h3>Percentage of gradient</h3>
+          <label>Percentage of gradient</label>
           <v-slider
             class="align-center"
             :max="max"
             :min="min"
+           
             hide-details
             thumb-label="always"
             @change="addPercentage"
@@ -26,7 +27,8 @@ export default {
   data() {
     return {
       min: 0,
-      max: 100
+      max: 100,
+   
     };
   },
 

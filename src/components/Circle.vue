@@ -53,6 +53,7 @@ export default {
   border-radius: 50%;
   display: "inline-block";
   position: absolute;
+  opacity: .6;
 
 }
 .circles {

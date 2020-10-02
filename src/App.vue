@@ -53,10 +53,8 @@ export default {
         "#85FFC7, #3cb371",
         "#297373, #2f4f4f",
         "#FF8552, #fdc888",
-        "#A40E4C ,#ffc2c2",
-        "#E94F37, #bb2d50",
-        "#1C89BF, #e3f7ff",
-        "#ddd, #90ee90",
+        "#A40E4C ,#ffc2c2"
+      
       ],
     };
   },
@@ -72,13 +70,13 @@ export default {
   position: relative;
 }
 .cont-small {
-  width: 75%;
+  width: 65%;
   margin: auto;
   position: relative;
   top: -16.5rem;
   background-color: #EAEAEA;
   border-radius: 1rem;
-  padding: 4rem;
+  padding: .5rem 4rem;
   z-index: 100;
   border: 2px solid #24292E;
 
