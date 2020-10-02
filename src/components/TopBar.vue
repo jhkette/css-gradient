@@ -21,6 +21,7 @@ h1 {
 
   z-index: 11;
   margin-top: .45rem;
+  text-shadow: 1px 1px 2px #929496;
 }
 img {
     height: 2rem;
