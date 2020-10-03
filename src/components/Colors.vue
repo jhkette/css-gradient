@@ -127,7 +127,7 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.25rem;
-  border: 3px solid #24292E;
+  border: 1px solid #24292E;
   cursor: pointer;
 }
 .cross {
@@ -137,7 +137,7 @@ export default {
 .border {
   background-color: #ebebeb;
   padding: 1rem;
-  border: 2px solid #24292E;
+  border: 1px solid #24292E;
   border-radius: 0.25rem;
 }
 .angle {

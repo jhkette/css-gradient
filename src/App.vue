@@ -31,7 +31,7 @@ import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
 import Modal from "./components/modal";
 import CirclesBg from "./components/CirclesBg";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
@@ -46,9 +46,9 @@ export default {
     Modal,
     CirclesBg,
     Circle1,
-    Footer
+    Footer,
   },
-  data: function() {
+  data: function () {
     return {
       colours: [
         "#E94F37, #bb2d50",
@@ -78,10 +78,10 @@ export default {
   position: relative;
   top: -23.5rem;
   background-color: #eaeaea;
-  border-radius: 1rem;
+  border-radius: .25rem;
   padding: 0.5rem 4rem;
   z-index: 100;
-  border: 2px solid #24292e;
+  border: 1px solid #24292e;
 }
 
 .cross {
