@@ -22,8 +22,8 @@ p {
 }
 
 label {
-    font-size: 22px;
-    margin-top: 16px;
+    font-size: 1.2rem;
+    margin-top: 1.2csrem;
     color: #1b1f1f;
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
