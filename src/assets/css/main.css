@@ -13,8 +13,8 @@ body {
 }
 
 p {
-    font-size: 22px;
-    margin-top: 22px;
+    font-size: 1.2rem;
+    margin-top: 1.4rem;
     color: #1b1f1f;
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
