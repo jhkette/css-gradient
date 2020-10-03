@@ -13,6 +13,7 @@
           <Opacity></Opacity>
         </div>
         <div class="mod">
+          <Direction></Direction>
           <Modal></Modal>
         </div>
       </div>
@@ -32,6 +33,7 @@ import Colors from "./components/Colors";
 import Modal from "./components/modal";
 import CirclesBg from "./components/CirclesBg";
 import Footer from "./components/Footer";
+import Direction from "./components/Direction"
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
@@ -47,6 +49,7 @@ export default {
     CirclesBg,
     Circle1,
     Footer,
+    Direction
   },
   data: function () {
     return {
@@ -95,6 +98,6 @@ export default {
 .mod {
   width: 20%;
   float: right;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 </style>

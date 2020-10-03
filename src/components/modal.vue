@@ -1,5 +1,6 @@
 <template>
   <div class="text-center">
+ 
     <v-dialog
       
       width="500"

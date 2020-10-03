@@ -69,6 +69,7 @@ export default {
   components: {
 
   },
+  
   computed: {
     ...mapGetters([
       "getFirstColour",
@@ -112,7 +113,7 @@ export default {
   },
   data() {
     return {
-      recAngle: 90,
+      angle: 90,
     };
   },
 };
