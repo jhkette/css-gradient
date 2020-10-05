@@ -15,9 +15,6 @@ export default {
       active: 'linear',
     };
   },
-  
- 
-
   methods: {
     ...mapActions([
       "addSecondColour",
@@ -29,8 +26,6 @@ export default {
       "addAngle",
       "addDirection"
     ]),
-  
-  
   }
 };
 </script>

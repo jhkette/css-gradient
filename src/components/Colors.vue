@@ -33,7 +33,6 @@
         <!-- by putting the dollar sign we  are telling vue we want
         the event object triggered by the specific event 'change' or whatever
         we specified. In vanilla js we obviously don't need to do this -->
-
         <input
           class="angle"
           label="angle"
