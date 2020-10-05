@@ -61,7 +61,7 @@ export default {
 }
 .border{
    width: 100%;
-  margin: 5rem auto 0rem auto;
+  margin: 2rem auto 0rem auto;
   height: 27rem;
  
   z-index: 10;

@@ -50,7 +50,7 @@
         Add angle
       </v-btn>
     </v-form>
-   
+      <div class="fle">
       <div
         class="swatch"
         id="swatch1"
@@ -63,6 +63,7 @@
         v-bind:style="{ backgroundColor: getSecondColour }"
         @click="color2"
       ></div>
+      </div>
       
     </div>
    
@@ -130,6 +131,12 @@ export default {
 .flex-s{
   display: flex;
   justify-content: flex-start;
+}
+.fle{
+  width: 9.5rem;
+  margin-left: 4.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .form{
