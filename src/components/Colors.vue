@@ -25,7 +25,7 @@
         </div>
       </div>
     </v-row>
-    <v-col class="d-flex justify-space-around">
+    <div class="flex-s">
       
       <v-form ref="form" class="form">
       <!-- by putting the dollar sign we  are telling vue we want
@@ -64,7 +64,7 @@
         @click="color2"
       ></div>
       
-    </v-col>
+    </div>
    
   </div>
 </template>
@@ -126,6 +126,11 @@ export default {
 };
 </script>
 <style scoped>
+
+.flex-s{
+  display: flex;
+  justify-content: flex-start;
+}
 
 .form{
   display: flex;
