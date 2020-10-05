@@ -131,12 +131,15 @@ export default {
 .flex-s{
   display: flex;
   justify-content: flex-start;
+  margin-bottom: .35rem;
 }
 .fle{
   width: 9.5rem;
   margin-left: 4.5rem;
   display: flex;
   justify-content: space-around;
+  /* align-items: center; */
+ 
 }
 
 .form{

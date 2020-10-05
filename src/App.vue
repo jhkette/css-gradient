@@ -14,7 +14,9 @@
         </div>
         <div class="mod">
           <Direction></Direction>
-          <Modal></Modal>
+          <div>
+            <Modal></Modal>
+          </div>
         </div>
       </div>
     </div>
@@ -33,7 +35,7 @@ import Colors from "./components/Colors";
 import Modal from "./components/modal";
 import CirclesBg from "./components/CirclesBg";
 import Footer from "./components/Footer";
-import Direction from "./components/Direction"
+import Direction from "./components/Direction";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 
 export default {
@@ -49,7 +51,7 @@ export default {
     CirclesBg,
     Circle1,
     Footer,
-    Direction
+    Direction,
   },
   data: function () {
     return {
@@ -81,7 +83,7 @@ export default {
   position: relative;
   top: -23.5rem;
   background-color: #eaeaea;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   padding: 0.5rem 4rem;
   z-index: 100;
   border: 1px solid #24292e;
