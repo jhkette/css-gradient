@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapActions } from "vuex";
 export default {
   data() {
     return {
@@ -16,19 +16,6 @@ export default {
     };
   },
   
-   components: {
-
-  },
-  
-  computed: {
-    ...mapGetters([
-      "getFirstColour",
-      "getSecondColour",
-      "getc1selected",
-      "getc2selected",
-      "getAngle",
-    ]),
-  },
  
 
   methods: {
@@ -42,9 +29,7 @@ export default {
       "addAngle",
       "addDirection"
     ]),
-    log(event){
-          console.log(event)
-      }
+  
   
   }
 };

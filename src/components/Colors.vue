@@ -31,6 +31,7 @@
       <!-- by putting the dollar sign we  are telling vue we want
         the event object triggered by the specific event 'change' or whatever
         we specified. In vanilla js we obviously don't need to do this -->
+     
      <input 
         class="angle"
         label="angle"
@@ -39,8 +40,13 @@
         max="360"
         placeholder="90"
         v-model="angle"
-      >
-      <v-btn class="ma-2" color="secondary" @click="addAngle(angle)">
+        
+      > 
+      <v-btn v-if="this.getDirection=='linear'" class="ma-2" color="secondary" @click="addAngle(angle)">
+        Add angle
+      </v-btn>  
+      
+      <v-btn v-else class="ma-2" disabled color="secondary" @click="addAngle(angle)">
         Add angle
       </v-btn>
     </v-form>
@@ -77,6 +83,7 @@ export default {
       "getc1selected",
       "getc2selected",
       "getAngle",
+      "getDirection"
     ]),
   },
  
@@ -145,7 +152,7 @@ export default {
 .angle {
   width: 3rem;
   margin-left: 10%;
-  margin-right: 3rem;
+  margin-right: .5rem;
   font-size: 1.15rem;
 }
 .rel{

@@ -20,12 +20,12 @@ h1 {
   color: #fff;
 
   z-index: 11;
-  margin-top: .45rem;
+  margin-top: .95rem;
   text-shadow: 1px 1px 2px #929496;
 }
 img {
     height: 2rem;
-     margin-top: .75rem;
+     margin-top: 1.45rem;
 }
 a{
     text-decoration: none;
@@ -41,7 +41,7 @@ a{
 }
 .topbar {
   width: 100%;
-  height: 3.5rem;
+  height: 4.5rem;
   background-color: #24292e;
   z-index: 10;
  
