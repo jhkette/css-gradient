@@ -50,10 +50,20 @@ export default {
       "getOpacity",
       "getFirstColour",
       "getSecondColour",
-      "getAngle"
+      "getAngle",
+      "getDirection"
     ]),
     backgroundString: function() {
-      return `background: ${this.direction}(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%);`;
+       if(this.getDirection == "linear"){
+      return `linear-gradient(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
+      }
+      else if(this.getDirection == "radial"){
+        return `radial-gradient(circle, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
+
+      }
+      else{
+        return 'error'
+      }
     },
     renderOpacity: function() {
       if (this.getOpacity == 10) {

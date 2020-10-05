@@ -23,9 +23,22 @@ p {
 
 label {
     font-size: 1.2rem;
-    margin-top: 1.2csrem;
+
     color: #1b1f1f;
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 
+}
+
+.v-input--selection-controls__input{
+    margin-bottom: .75rem;
+}
+
+label.v-label.theme--light {
+    font-size: 1.2rem !important;
+    /* margin-bottom: .5rem; */
+    margin-bottom: .75rem;
+    color: #1b1f1f;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }

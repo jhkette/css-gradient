@@ -11,7 +11,7 @@
             @click="addc1unselected"
           />
 
-          <v-color-picker @input="all"  hide-inputs="true" width="140"></v-color-picker>
+          <v-color-picker @input="all" hide-inputs   width="140"></v-color-picker>
         </div>
       </div>
       <div class="left-col">
@@ -21,7 +21,7 @@
             class="cross"
             @click="addc2unselected"
           />
-          <v-color-picker hide-inputs="true" width="140" @input="all1"></v-color-picker>
+          <v-color-picker width="140" @input="all1" hide-inputs ></v-color-picker>
         </div>
       </div>
     </v-row>
@@ -130,6 +130,7 @@ export default {
   border-radius: 0.25rem;
   border: 1px solid #24292E;
   cursor: pointer;
+  margin-top: .4rem;
 }
 .cross {
   font-size: 1.8rem;
