@@ -32,7 +32,7 @@ export default {
       return Math.random() * (220 - 70) + 70 + "px";
     },
     height() {
-      return Math.round(Math.random() * this.winHeight - 220) + "px";
+      return Math.round(Math.random() * 600) + "px";
     },
     newwidth() {
       return Math.round(Math.random() * this.winWidth - 220) + "px";

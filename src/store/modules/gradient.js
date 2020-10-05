@@ -1,13 +1,16 @@
 const state = {
   percentage: 0,
   opacity: 10,
-  colour1: '#0063FF',
-  colour2: '#FFFFFF',
+  colour1: '#BBDDA5',
+  colour2: '#C1E6FE',
   c1selected: false,
   c2selected: false,
   angle: 90,
   direction: 'linear'
 }
+
+
+
 
 const getters = {
     getPercentage: (state) => state.percentage,
