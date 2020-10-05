@@ -100,6 +100,6 @@ export default {
 .mod {
   width: 20%;
   float: right;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 </style>
