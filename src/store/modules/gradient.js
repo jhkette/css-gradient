@@ -25,10 +25,11 @@ const getters = {
 
 const actions = {
     addFirstColour: ({commit}, colour1) => {
-        commit('setColour1', colour1.hex)
+        
+        commit('setColour1', colour1.hexa)
     },
     addSecondColour: ({commit}, colour2) => {
-        commit('setColour2', colour2.hex)
+        commit('setColour2', colour2.hexa)
     },
     addPercentage: ({commit}, percentage) => {
         commit('setPercentage', percentage)
