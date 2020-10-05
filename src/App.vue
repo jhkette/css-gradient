@@ -60,7 +60,6 @@ export default {
         "#1C89BF, #e3f7ff",
         "#A1D363, #90ee90",
         "#85FFC7, #3cb371",
-        "#297373, #2f4f4f",
         "#FF8552, #fdc888"
      
       ],

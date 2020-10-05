@@ -16,13 +16,11 @@
 <script>
 export default {
   props: ["colour"],
-  data: function() {
+  data: function () {
     return {
-       winWidth: null,
+      winWidth: null,
       winHeight: null,
-
-    }
-
+    };
   },
   computed: {
     bgstyle() {
@@ -32,7 +30,7 @@ export default {
       return Math.random() * (220 - 70) + 70 + "px";
     },
     height() {
-      return Math.round(Math.random() * 600) + "px";
+      return Math.round(Math.random() * 400) + "px";
     },
     newwidth() {
       return Math.round(Math.random() * this.winWidth - 220) + "px";
@@ -53,8 +51,7 @@ export default {
   border-radius: 50%;
   display: "inline-block";
   position: absolute;
-  opacity: .6;
-
+  opacity: 0.6;
 }
 .circles {
   background: "linear-gradient(to right bottom," + bgColor + ")";
