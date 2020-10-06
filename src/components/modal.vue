@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <v-dialog width="500">
+    <v-dialog width="500" dark>
       <template v-slot:activator="{ on, attrs }">
         <v-btn class="ma-2" color="secondary" v-bind="attrs" v-on="on">
           Get some css
@@ -8,19 +8,19 @@
       </template>
 
       <v-card>
-        <v-card-title class="headline grey lighten-2" primary-title>
+        <v-card-title dark primary-title>
           CSS
         </v-card-title>
 
         <v-card-text>
-          <p>{{ backgroundString }} opacity: {{ renderOpacity }}</p>
+          <p class="code">{{ backgroundString }} opacity: {{ renderOpacity }}</p>
         </v-card-text>
 
         <v-divider></v-divider>
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="ma-2" color="secondary" @click="copyText">Copy</v-btn>
+          <v-btn class="ma-2" color="#01DAC5" @click="copyText">Copy</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -70,4 +70,13 @@ export default {
     };
   },
 };
+
 </script>
+<style scoped>
+.code {
+  font-family: 'Source Code Pro', monospace;
+  color: #03DAC6;
+
+}
+
+</style>
