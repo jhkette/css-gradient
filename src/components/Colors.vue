@@ -162,10 +162,12 @@ export default {
   cursor: pointer;
 }
 .border {
-  background-color: #ebebeb;
-  padding: 1rem;
-  border: 1px solid #24292e;
-  border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #24292e;
+    border-radius: .15rem;
+    z-index: 200;
+    position: relative;
 }
 .angle {
   width: 3rem;
@@ -178,13 +180,13 @@ export default {
 }
 .left-col {
   position: absolute;
-  right: -5rem;
+  right: -2.5rem;
   top: -9.5rem;
 }
 .right-col {
   position: absolute;
 
-  left: 21rem;
+  left: 5rem;
   top: -9.5rem;
   z-index: 900;
 }

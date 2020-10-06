@@ -13,20 +13,20 @@
         </v-card-title>
 
         <v-card-text>
-          <p class="code">{{ backgroundString }} opacity: {{ renderOpacity }}</p>
+          <p class="code" id="codecopy">{{ backgroundString }} opacity: {{ renderOpacity }}</p>
         </v-card-text>
 
         <v-divider></v-divider>
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="ma-2" color="#01DAC5" @click="copyText">Copy</v-btn>
+          <v-btn class="ma-2" color="#01DAC5" @click="copy(backgroundString+' opacity: '+renderOpacity)">Copy</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
 </template>
-
+background: linear-gradient(90deg, #BBDDA5 0%, #C1E6FE 100%);opacity:1;
 
 <script>
 import { mapGetters } from "vuex";
@@ -57,13 +57,15 @@ export default {
       return `0.${this.getOpacity};`;
     },
   },
+
+  
   methods: {
-    copyText() {
-      let textToCopy = this.$refs.textToCopy.$el.querySelector("input");
-      textToCopy.select();
-      document.execCommand("copy");
+    async copy(s) {
+      await navigator.clipboard.writeText(s);
+      alert('Copied!');
+    }
     },
-  },
+  
   data: function () {
     return {
       direction: "linear-gradient",
