@@ -4,6 +4,10 @@ body {
     margin: 0;
     box-sizing: border-box;
     /* font-size: 300%; */
+   
+        position: relative;
+        min-height: 100%;
+   
 }
 
 
@@ -471,7 +475,6 @@ body {
 
 #app {
     background-color: #eaeaea;
-    min-height: 100vh;
     overflow: hidden;
 }
 
