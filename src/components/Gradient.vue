@@ -50,7 +50,7 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  height: 27rem;
+  height: 31rem;
   background-color: white;
   position: relative;
   z-index: 10;
@@ -60,7 +60,7 @@ export default {
 .border {
   width: 100%;
   margin: 2rem auto 0rem auto;
-  height: 27rem;
+  height: 31rem;
 
   z-index: 10;
   position: relative;

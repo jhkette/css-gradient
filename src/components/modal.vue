@@ -6,27 +6,28 @@
           Get some css
         </v-btn>
       </template>
-
       <v-card>
-        <v-card-title dark primary-title>
-          CSS
-        </v-card-title>
-
+        <v-card-title dark primary-title> CSS </v-card-title>
         <v-card-text>
-          <p class="code" id="codecopy">{{ backgroundString }} opacity: {{ renderOpacity }}</p>
+          <p class="code" id="codecopy">
+            {{ backgroundString }} opacity: {{ renderOpacity }}
+          </p>
         </v-card-text>
-
         <v-divider></v-divider>
-
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="ma-2" color="#01DAC5" @click="copy(backgroundString+' opacity: '+renderOpacity)">Copy</v-btn>
+          <v-btn
+            class="ma-2"
+            color="#01DAC5"
+            @click="copy(backgroundString + ' opacity: ' + renderOpacity)"
+            >Copy</v-btn
+          >
         </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
 </template>
-background: linear-gradient(90deg, #BBDDA5 0%, #C1E6FE 100%);opacity:1;
+
 
 <script>
 import { mapGetters } from "vuex";
@@ -58,27 +59,23 @@ export default {
     },
   },
 
-  
   methods: {
     async copy(s) {
       await navigator.clipboard.writeText(s);
-      alert('Copied!');
-    }
+      alert("Copied!");
     },
-  
+  },
+
   data: function () {
     return {
       direction: "linear-gradient",
     };
   },
 };
-
 </script>
 <style scoped>
 .code {
-  font-family: 'Source Code Pro', monospace;
-  color: #03DAC6;
-
+  font-family: "Source Code Pro", monospace;
+  color: #03dac6;
 }
-
 </style>
