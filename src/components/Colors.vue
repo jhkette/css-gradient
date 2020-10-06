@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-row class="mb-6 rel">
-      <!-- use absolute positioning -->
       <div class="right-col">
         <div class="border" v-if="getc1selected">
           <font-awesome-icon
@@ -10,7 +9,7 @@
             @click="addc1unselected"
           />
 
-          <v-color-picker @input="all" hide-inputs width="140"></v-color-picker>
+          <v-color-picker @input="addFirstColour($event)" hide-inputs width="140"></v-color-picker>
         </div>
       </div>
       <div class="left-col">
@@ -22,7 +21,7 @@
           />
           <v-color-picker
             width="140"
-            @input="all1"
+            @input="addSecondColour($event)"
             hide-inputs
           ></v-color-picker>
         </div>
@@ -30,9 +29,6 @@
     </v-row>
     <div class="flex-s">
       <v-form ref="form" class="form">
-        <!-- by putting the dollar sign we  are telling vue we want
-        the event object triggered by the specific event 'change' or whatever
-        we specified. In vanilla js we obviously don't need to do this -->
         <input
           class="angle"
           label="angle"
@@ -50,7 +46,6 @@
         >
           Add angle
         </v-btn>
-
         <v-btn
           v-else
           class="ma-2"
@@ -66,13 +61,13 @@
           class="swatch"
           id="swatch1"
           v-bind:style="{ backgroundColor: getFirstColour }"
-          @click="color1"
+          @click="addc1selected()"
         ></div>
         <div
           class="swatch"
           id="swatch2"
           v-bind:style="{ backgroundColor: getSecondColour }"
-          @click="color2"
+          @click="addc2selected()"
         ></div>
       </div>
     </div>
@@ -80,10 +75,9 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-// https://codepen.io/JamieCurnow/pen/KKPjraK
-export default {
-  components: {},
 
+export default {
+ 
   computed: {
     ...mapGetters([
       "getFirstColour",
@@ -105,24 +99,6 @@ export default {
       "addc2unselected",
       "addAngle",
     ]),
-
-    all: function (event) {
-      console.log(event);
-      this.addFirstColour(event);
-    },
-    all1: function (event) {
-      console.log(event);
-      this.addSecondColour(event);
-    },
-    color1: function () {
-      this.addc1selected();
-    },
-    color2: function () {
-      this.addc2selected();
-    },
-    recordAngle: function (event) {
-      this.recAngle = event;
-    },
   },
   data() {
     return {

@@ -9,7 +9,7 @@
       height: diameter,
     }"
   >
-    <!-- <p>{{colour}}</p> -->
+  
   </div>
 </template>
 

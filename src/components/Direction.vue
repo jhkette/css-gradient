@@ -17,13 +17,6 @@ export default {
   },
   methods: {
     ...mapActions([
-      "addSecondColour",
-      "addFirstColour",
-      "addc1selected",
-      "addc2selected",
-      "addc1unselected",
-      "addc2unselected",
-      "addAngle",
       "addDirection"
     ]),
   }
