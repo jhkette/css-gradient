@@ -1,9 +1,11 @@
 <template>
- 
-   <div class ="border">
-     <div class="bg">
-    <div v-bind:style="{ background: backgroundString, opacity: renderOpacity}" class="gradient"></div>
-    <div/>
+  <div class="border">
+    <div class="bg">
+      <div
+        v-bind:style="{ background: backgroundString, opacity: renderOpacity }"
+        class="gradient"
+      ></div>
+      <div />
     </div>
   </div>
 </template>
@@ -18,61 +20,53 @@ export default {
       "getFirstColour",
       "getSecondColour",
       "getAngle",
-      "getDirection"
+      "getDirection",
     ]),
-    backgroundString: function() {
-      if(this.getDirection == "linear"){
-      return `linear-gradient(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
-      }
-      else if(this.getDirection == "radial"){
+    backgroundString: function () {
+      if (this.getDirection == "linear") {
+        return `linear-gradient(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
+      } else if (this.getDirection == "radial") {
         return `radial-gradient(circle, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
-
-      }
-      else{
-        return 'error'
+      } else {
+        return "error";
       }
     },
-    renderOpacity: function() {
+    renderOpacity: function () {
       if (this.getOpacity == 10) {
         return 1;
       }
       return `0.${this.getOpacity}`;
-    }
+    },
   },
 
-  data: function() {
+  data: function () {
     return {
       direction: "linear-gradient",
-      degree: "90"
+      degree: "90",
     };
-  }
+  },
 };
 </script>
 <style scoped>
-.bg{
+.bg {
   width: 100%;
   height: 27rem;
   background-color: white;
   position: relative;
   z-index: 10;
-   border-top: 1px solid #24292E;
-  border-bottom: 1px solid #24292E;
-
+  border-top: 1px solid #24292e;
+  border-bottom: 1px solid #24292e;
 }
-.border{
-   width: 100%;
+.border {
+  width: 100%;
   margin: 2rem auto 0rem auto;
   height: 27rem;
- 
+
   z-index: 10;
   position: relative;
- 
-
 }
 .gradient {
   width: 100%;
   height: 100%;
-  
- 
 }
 </style>

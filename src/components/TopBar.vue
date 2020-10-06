@@ -25,7 +25,7 @@ h1 {
 }
 img {
     height: 2rem;
-     margin-top: 1.45rem;
+     margin-top: 1.25rem;
 }
 a{
     text-decoration: none;

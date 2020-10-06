@@ -1,12 +1,5 @@
 <template>
-  <section class="heading">
-   
-
-    
-    <p class="first">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi earum aliquam explicabo ex, ratione et necessitatibus, est, velit cum nam nihil eveniet facere nobis? Ea est pariatur aperiam accusamus.
-    </p>
-  </section>
+ 
 </template>
 
 <script>
@@ -16,13 +9,5 @@ export default {
 </script>
 
 <style scoped>
- .first{
-  margin: 2rem 0 0rem 0;
- }
 
-.heading {
-  width: 80%;
-  margin: auto;
-  position: relative;
-}
 </style>
