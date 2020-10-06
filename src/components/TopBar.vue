@@ -2,7 +2,7 @@
   <div class="topbar">
     <header class="inner">
     <h1>CSS Gradient Generator</h1>
-    <a href=""><img src="../assets/github.png" alt="github"/></a>
+    <a href="https://github.com/jhkette/css-gradient"><img src="../assets/github.png" alt="github"/></a>
     </header>
   </div>
 </template>
