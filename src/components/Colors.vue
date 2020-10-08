@@ -9,7 +9,12 @@
             @click="addc1unselected"
           />
 
-          <v-color-picker @input="addFirstColour($event)" hide-inputs width="140"></v-color-picker>
+          <v-color-picker
+            @input="addColour1($event)"
+            hide-inputs
+            width="140"
+            v-model="colour1"
+          ></v-color-picker>
         </div>
       </div>
       <div class="left-col">
@@ -21,8 +26,9 @@
           />
           <v-color-picker
             width="140"
-            @input="addSecondColour($event)"
+            @input="addColour2($event)"
             hide-inputs
+            v-model="colour2"
           ></v-color-picker>
         </div>
       </div>
@@ -75,9 +81,9 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-
+// https://codepen.io/JamieCurnow/pen/KKPjraK
+// sought out saved swatch using vmodel
 export default {
- 
   computed: {
     ...mapGetters([
       "getFirstColour",
@@ -99,10 +105,22 @@ export default {
       "addc2unselected",
       "addAngle",
     ]),
+    addColour1: function (event){
+      
+      this.addFirstColour(event)
+      this.colour1 = event
+    },
+     addColour2: function (event){
+     
+      this.addSecondColour(event)
+      this.colour2 = event
+    }
   },
   data() {
     return {
       angle: 90,
+      colour1: '#797676FF',
+      colour2: '#C1E6FE'
     };
   },
 };
@@ -138,12 +156,12 @@ export default {
   cursor: pointer;
 }
 .border {
-    background-color: #ffffff;
-    padding: 1rem;
-    border: 1px solid #24292e;
-    border-radius: .15rem;
-    z-index: 200;
-    position: relative;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #24292e;
+  border-radius: 0.15rem;
+  z-index: 200;
+  position: relative;
 }
 .angle {
   width: 3rem;

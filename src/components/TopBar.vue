@@ -42,7 +42,7 @@ a{
 .topbar {
   width: 100%;
   height: 4.5rem;
-  background-color: #24292e;
+  background: linear-gradient(1deg, #2A2A2AFF 4%, #0F0F0FFF 100%); 
   z-index: 10;
  
 }

@@ -9,10 +9,6 @@ const state = {
   direction: 'linear'
 }
 
-
-
-
-
 const getters = {
     getPercentage: (state) => state.percentage,
     getOpacity: (state) => state.opacity,
@@ -27,10 +23,10 @@ const getters = {
 const actions = {
     addFirstColour: ({commit}, colour1) => {
         
-        commit('setColour1', colour1.hexa)
+        commit('setColour1', colour1)
     },
     addSecondColour: ({commit}, colour2) => {
-        commit('setColour2', colour2.hexa)
+        commit('setColour2', colour2)
     },
     addPercentage: ({commit}, percentage) => {
         commit('setPercentage', percentage)
