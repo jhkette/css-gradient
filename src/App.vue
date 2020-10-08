@@ -131,7 +131,7 @@ export default {
   color: #1b1f1f;
    left: 0; 
   right: 0; 
-  top: -1.5rem;
+  top: 1.5rem;
   margin-left: auto; 
   margin-right: auto; 
   width: 350px; 
