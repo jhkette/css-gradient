@@ -25,11 +25,9 @@ export default {
     backgroundString: function () {
       if (this.getDirection == "linear") {
         return `linear-gradient(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
-      } else if (this.getDirection == "radial") {
-        return `radial-gradient(circle, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
       } else {
-        return "error";
-      }
+        return `radial-gradient(circle, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%)`;
+      } 
     },
     renderOpacity: function () {
       if (this.getOpacity == 10) {

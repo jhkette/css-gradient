@@ -6,7 +6,8 @@ const state = {
   c1selected: false,
   c2selected: false,
   angle: 90,
-  direction: 'linear'
+  direction: 'linear',
+  copied: false
 }
 
 const getters = {
@@ -17,7 +18,8 @@ const getters = {
     getc1selected: (state) => state.c1selected,
     getc2selected: (state) => state.c2selected,
     getAngle:(state) => state.angle, 
-    getDirection: (state) => state.direction
+    getDirection: (state) => state.direction,
+    getCopied: (state) => state.copied
 }
 
 const actions = {
@@ -54,6 +56,10 @@ const actions = {
     addDirection: ({commit}, direction) => {
         
         commit('setDirection', direction)
+    },
+
+    addCopied: ({commit}) => {
+        commit('setCopied')
     }
 }
 
@@ -88,6 +94,10 @@ const mutations = {
     setDirection: (state, direction) => {
         console.log(direction)
         state.direction = direction
+    },
+    setCopied: (state) => {
+        state.copied = !state.copied
+        
     }
 }
 

@@ -9,6 +9,7 @@
           earum aliquam explicabo ex, ratione et necessitatibus, est, velit cum
           nam nihil eveniet facere nobis? Ea est pariatur aperiam accusamus.
         </h3>
+        <p class="copy-msg" v-bind:class="{ show: getCopied }">CSS copied!</p>
       </section>
       <Gradient />
       <div class="cont-small">
@@ -42,7 +43,7 @@ import Modal from "./components/modal";
 import Footer from "./components/Footer";
 import Direction from "./components/Direction";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
-
+import { mapGetters } from "vuex";
 export default {
   name: "App",
 
@@ -57,6 +58,9 @@ export default {
     Circle1,
     Footer,
     Direction,
+  },
+  computed: {
+    ...mapGetters(["getCopied"]),
   },
   data: function () {
     return {
@@ -108,10 +112,10 @@ export default {
 .first {
   margin: 2rem 0 0rem 0;
   font-weight: 400;
-   font-size: 1.2rem;
-     color: #1b1f1f;
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-size: 1.2rem;
+  color: #1b1f1f;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .heading {
@@ -119,9 +123,34 @@ export default {
   margin: auto;
   position: relative;
 }
+.copy-msg {
+  position: absolute;
+  font-size: 4rem;
+  transform: scale(0.1);
+  opacity: 0;
+  color: #1b1f1f;
+   left: 0; 
+  right: 0; 
+  top: -1.5rem;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 350px; 
+
+
+}
+
+.copy-msg.show {
+  display: inline-block;
+  opacity: 1;
+  transform: scale(1.2);
+  z-index: 200;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.3s;
+  position: absolute;
+}
 
 @media only screen and (max-width: 920px) {
-  .cont-small{
+  .cont-small {
     width: 100%;
   }
 }

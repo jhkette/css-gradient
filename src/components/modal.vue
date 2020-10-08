@@ -28,9 +28,8 @@
   </div>
 </template>
 
-
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
   name: "Modal",
   computed: {
@@ -42,7 +41,7 @@ export default {
       "getAngle",
       "getDirection",
     ]),
-    backgroundString: function () {
+    backgroundString: function() {
       if (this.getDirection == "linear") {
         return `background: linear-gradient(${this.getAngle}deg, ${this.getFirstColour} ${this.getPercentage}%, ${this.getSecondColour} 100%);`;
       } else if (this.getDirection == "radial") {
@@ -51,7 +50,7 @@ export default {
         return "error";
       }
     },
-    renderOpacity: function () {
+    renderOpacity: function() {
       if (this.getOpacity == 10) {
         return 1 + ";";
       }
@@ -60,13 +59,17 @@ export default {
   },
 
   methods: {
+    ...mapActions(["addCopied"]),
     async copy(s) {
       await navigator.clipboard.writeText(s);
-      alert("Copied!");
+      this.addCopied();
+      setTimeout(() => {
+        this.addCopied();
+      }, 2100);
     },
   },
 
-  data: function () {
+  data: function() {
     return {
       direction: "linear-gradient",
     };
