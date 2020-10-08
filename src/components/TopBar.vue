@@ -16,7 +16,7 @@ h1 {
   font-family: "Source sans pro";
   font-weight: 600;
 
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #fff;
 
   z-index: 11;
@@ -25,7 +25,7 @@ h1 {
 }
 img {
     height: 2rem;
-     margin-top: 1.25rem;
+     margin-top: .85rem;
 }
 a{
     text-decoration: none;
@@ -41,8 +41,8 @@ a{
 }
 .topbar {
   width: 100%;
-  height: 4.5rem;
-  background: linear-gradient(1deg, #2A2A2AFF 4%, #0F0F0FFF 100%); 
+  height: 60px;
+  background-color: #24292E;
   z-index: 10;
  
 }
