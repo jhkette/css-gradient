@@ -61,11 +61,12 @@ export default {
   methods: {
     ...mapActions(["addCopied"]),
     async copy(s) {
-      await navigator.clipboard.writeText(s);
+      
       this.addCopied();
       setTimeout(() => {
         this.addCopied();
       }, 2100);
+      await navigator.clipboard.writeText(s);
     },
   },
 
