@@ -10,9 +10,10 @@
           />
 
           <v-color-picker
+           width="140"
             @input="addColour1($event)"
             hide-inputs
-            width="140"
+           
             v-model="colour1"
           ></v-color-picker>
         </div>
@@ -120,7 +121,7 @@ export default {
     return {
       angle: 90,
       colour1: '#797676FF',
-      colour2: '#C1E6FE'
+      colour2: '#C1E6FEff'
     };
   },
 };
@@ -174,17 +175,23 @@ export default {
 }
 .left-col {
   position: absolute;
-  right: -2.5rem;
+  left: 65%;
   top: -9.5rem;
 }
 .right-col {
   position: absolute;
 
-  left: 5rem;
+  left: 10%;
   top: -9.5rem;
   z-index: 900;
 }
 .button {
   margin-top: 0.4rem;
+}
+
+@media only screen and (max-width: 920px) {
+  /* .left-col{
+    left: 0%;
+  } */
 }
 </style>
