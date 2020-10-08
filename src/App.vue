@@ -144,8 +144,8 @@ export default {
   opacity: 1;
   transform: scale(1.2);
   z-index: 200;
-  transition: all 0.4s ease-in-out;
-  transition-delay: 0.3s;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.15s;
   position: absolute;
 }
 
