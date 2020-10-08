@@ -10,10 +10,9 @@
           />
 
           <v-color-picker
-           width="140"
+            width="140"
             @input="addColour1($event)"
             hide-inputs
-           
             v-model="colour1"
           ></v-color-picker>
         </div>
@@ -106,22 +105,20 @@ export default {
       "addc2unselected",
       "addAngle",
     ]),
-    addColour1: function (event){
-      
-      this.addFirstColour(event)
-      this.colour1 = event
+    addColour1: function (event) {
+      this.addFirstColour(event);
+      this.colour1 = event;
     },
-     addColour2: function (event){
-     
-      this.addSecondColour(event)
-      this.colour2 = event
-    }
+    addColour2: function (event) {
+      this.addSecondColour(event);
+      this.colour2 = event;
+    },
   },
   data() {
     return {
       angle: 90,
-      colour1: '#797676FF',
-      colour2: '#C1E6FEff'
+      colour1: "#797676FF",
+      colour2: "#C1E6FEff",
     };
   },
 };
@@ -190,8 +187,8 @@ export default {
 }
 
 @media only screen and (max-width: 920px) {
-  /* .left-col{
-    left: 0%;
-  } */
+  .left-col {
+    left: 80%;
+  }
 }
 </style>
