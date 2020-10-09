@@ -62,7 +62,7 @@ export default {
   computed: {
     ...mapGetters(["getCopied"]),
   },
-  data: function () {
+  data: function() {
     return {
       colours: [
         "#E94F37, #bb2d50",
@@ -129,14 +129,12 @@ export default {
   transform: scale(0.1);
   opacity: 0;
   color: #1b1f1f;
-   left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   top: 1.5rem;
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 350px; 
-
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
 }
 
 .copy-msg.show {
