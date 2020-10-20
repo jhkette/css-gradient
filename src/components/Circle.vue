@@ -51,17 +51,8 @@ export default {
   border-radius: 50%;
   display: "inline-block";
   position: absolute;
-  opacity: 0.6;
+  opacity: 1;
+  border: 2px solid #24292e;
 }
-.circles {
-  background: "linear-gradient(to right bottom," + bgColor + ")";
 
-  width: diameter;
-  height: diameter;
-  opacity: 0.2;
-
-  position: "absolute";
-  top: newheight + "px";
-  left: newwidth + "px";
-}
 </style>
