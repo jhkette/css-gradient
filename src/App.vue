@@ -112,7 +112,7 @@ export default {
 .first {
   margin: 2rem 0 0rem 0;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1b1f1f;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
