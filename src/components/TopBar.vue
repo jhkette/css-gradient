@@ -25,7 +25,7 @@ h1 {
 }
 img {
     height: 2rem;
-   margin-top: .25rem;
+   margin-top: .35rem;
 
 }
 a{
@@ -38,7 +38,7 @@ a{
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  padding: .25rem 0;
+  padding: .45rem 0;
 
 }
 .topbar {
