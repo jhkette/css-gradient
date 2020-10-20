@@ -3,7 +3,7 @@
     <v-card-text class="row_np">
       <v-row>
         <v-col class="pr-4">
-          <label>Percentage of gradient</label>
+          <label> Position (percentage) of gradient</label>
           <v-slider
             class="align-center"
             :max="max"

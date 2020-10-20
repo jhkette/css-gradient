@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-radio-group v-model="active" row @change="addDirection">
+
       <v-radio  name="active" label="Linear" :value="'linear'" key="0"></v-radio>
       <v-radio   name="active" label="Radial" :value="'radial'" key="1"></v-radio>
     </v-radio-group>

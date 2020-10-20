@@ -18,6 +18,7 @@
         </div>
       </div>
       <div class="left-col">
+        
         <div class="border" v-if="getc2selected">
           <font-awesome-icon
             icon="times"
@@ -50,7 +51,7 @@
           color="secondary"
           @click="addAngle(angle)"
         >
-          Add angle
+          Gradient angle
         </v-btn>
         <v-btn
           v-else
@@ -59,10 +60,11 @@
           color="secondary"
           @click="addAngle(angle)"
         >
-          Add angle
+          Gradient angle
         </v-btn>
       </v-form>
       <div class="fle">
+       
         <div
           class="swatch"
           id="swatch1"

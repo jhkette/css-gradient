@@ -3,7 +3,7 @@
     <v-card-text class="row_np">
       <v-row>
         <v-col class="pr-4">
-          <label>Change opacity</label>
+          <label>Change background opacity</label>
           <v-slider
             class="align-center"
             :min="min"
