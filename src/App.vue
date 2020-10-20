@@ -5,9 +5,9 @@
     <main class="cont">
       <section class="heading">
         <p class="first">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi
-          earum aliquam explicabo ex, ratione et necessitatibus, est, velit cum
-          nam nihil eveniet facere nobis? Ea est pariatur aperiam accusamus.
+        Generate a gradient and then get the CSS. Press the colour swatches to change
+        the gradient colurs. Use the slider to change the gradient position / opacity. Use 
+        the radio buttons to choose a linear or radial gradient. 
         </p>
         <p class="copy-msg" v-bind:class="{ show: getCopied }">CSS copied!</p>
       </section>
@@ -111,8 +111,8 @@ export default {
 }
 .first {
   margin: 2rem 0 0rem 0;
-  font-weight: 500;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   color: #1b1f1f;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
