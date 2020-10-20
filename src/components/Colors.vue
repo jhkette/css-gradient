@@ -147,7 +147,7 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #24292e;
+  border: 2px solid #24292e;
   cursor: pointer;
   margin-top: 0.4rem;
 }
@@ -158,7 +158,7 @@ export default {
 .border {
   background-color: #ffffff;
   padding: 1rem;
-  border: 1px solid #24292e;
+  border: 2px solid #24292e;
   border-radius: 0.15rem;
   z-index: 200;
   position: relative;

@@ -93,7 +93,7 @@ export default {
   border-radius: 0.25rem;
   padding: 0.5rem 4rem;
   z-index: 100;
-  border: 1px solid #24292e;
+  border: 2px solid #24292e;
 }
 
 .cross {

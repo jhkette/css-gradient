@@ -52,8 +52,8 @@ export default {
   background-color: white;
   position: relative;
   z-index: 10;
-  border-top: 1px solid #24292e;
-  border-bottom: 1px solid #24292e;
+  border-top: 2px solid #24292e;
+  border-bottom: 2px solid #24292e;
 }
 .border {
   width: 100%;
