@@ -4,11 +4,11 @@
     <Topbar />
     <main class="cont">
       <section class="heading">
-        <h3 class="first">
+        <p class="first">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi
           earum aliquam explicabo ex, ratione et necessitatibus, est, velit cum
           nam nihil eveniet facere nobis? Ea est pariatur aperiam accusamus.
-        </h3>
+        </p>
         <p class="copy-msg" v-bind:class="{ show: getCopied }">CSS copied!</p>
       </section>
       <Gradient />
@@ -88,7 +88,7 @@ export default {
   width: 65%;
   margin: auto;
   position: relative;
-  top: -26.5rem;
+  top: -28.5rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
   padding: 0.5rem 4rem;
@@ -111,8 +111,8 @@ export default {
 }
 .first {
   margin: 2rem 0 0rem 0;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.25rem;
   color: #1b1f1f;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

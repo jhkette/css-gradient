@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  height: 33rem;
+  height: 28rem;
   background-color: white;
   position: relative;
   z-index: 10;

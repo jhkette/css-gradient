@@ -57,10 +57,10 @@ body {
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 {
+  /* h1 {
     font-size: 2em;
     margin: 0.67em 0;
-  }
+  } */
   
   /* Grouping content
      ========================================================================== */
@@ -476,6 +476,7 @@ body {
 #app {
   background: linear-gradient(68deg, #F2F2F2FF 0%, #D2D2D2FF 100%); opacity: 1; 
     overflow: hidden;
+    max-height: 112vh;
 }
 
 p {

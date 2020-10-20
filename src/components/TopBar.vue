@@ -16,16 +16,17 @@ h1 {
   font-family: "Source sans pro";
   font-weight: 600;
 
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #fff;
 
   z-index: 11;
-  margin-top: .95rem;
+  
   text-shadow: 1px 1px 2px #929496;
 }
 img {
     height: 2rem;
-     margin-top: .85rem;
+   margin-top: .25rem;
+
 }
 a{
     text-decoration: none;
@@ -37,11 +38,12 @@ a{
   justify-content: space-between;
   width: 80%;
   margin: auto;
+  padding: .25rem 0;
 
 }
 .topbar {
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
   background-color: #24292E;
   z-index: 10;
  
