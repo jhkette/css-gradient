@@ -6,7 +6,7 @@
       <section class="heading">
         <p class="first">
         Generate a gradient and then get the CSS. Press the colour swatches to change
-        the gradient colurs. Use the slider to change the gradient position / opacity. Use 
+        the gradient colours. Use the slider to change the gradient position / opacity. Use 
         the radio buttons to choose a linear or radial gradient. 
         </p>
         <p class="copy-msg" v-bind:class="{ show: getCopied }">CSS copied!</p>
@@ -65,11 +65,11 @@ export default {
   data: function() {
     return {
       colours: [
-        "#E94F37, #bb2d50",
-        "#1C89BF, #e3f7ff",
-        "#A1D363, #90ee90",
-        "#85FFC7, #3cb371",
-        "#FF8552, #fdc888",
+        "#E94F37aa, #bb2d50ee",
+        "#1C89BFff, #e3f7ffff",
+        "#A1D363ee, #90ee90",
+        "#85FFC7aa, #3cb371ee",
+        "#FF8552ee, #fdc888ee",
       ],
     };
   },
