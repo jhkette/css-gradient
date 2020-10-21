@@ -8,7 +8,6 @@
             class="cross"
             @click="addc1unselected"
           />
-
           <v-color-picker
             width="140"
             @input="addColour1($event)"
@@ -17,8 +16,7 @@
           ></v-color-picker>
         </div>
       </div>
-      <div class="left-col">
-        
+      <div class="left-col">   
         <div class="border" v-if="getc2selected">
           <font-awesome-icon
             icon="times"
@@ -152,7 +150,7 @@ export default {
 .right-col {
   position: absolute;
 
-  left: 10%;
+  left: 13%;
   top: -9.5rem;
   z-index: 900;
 }

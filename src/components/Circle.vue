@@ -9,7 +9,6 @@
       height: diameter,
     }"
   >
-  
   </div>
 </template>
 
