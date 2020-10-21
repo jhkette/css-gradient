@@ -35,34 +35,7 @@
       </div>
     </v-row>
     <div class="flex-s">
-      <v-form ref="form" class="form">
-        <input
-          class="angle"
-          label="angle"
-          type="number"
-          min="0"
-          max="360"
-          placeholder="90"
-          v-model="angle"
-        />
-        <v-btn
-          v-if="this.getDirection == 'linear'"
-          class="ma-2"
-          color="secondary"
-          @click="addAngle(angle)"
-        >
-          Gradient angle
-        </v-btn>
-        <v-btn
-          v-else
-          class="ma-2"
-          disabled
-          color="secondary"
-          @click="addAngle(angle)"
-        >
-          Gradient angle
-        </v-btn>
-      </v-form>
+     <Angle />
       <div class="fle">
        
         <div
@@ -83,9 +56,13 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
+import Angle from './Angle'
 // https://codepen.io/JamieCurnow/pen/KKPjraK
 // sought out saved swatch using vmodel
 export default {
+  components: {
+    Angle
+  },
   computed: {
     ...mapGetters([
       "getFirstColour",
@@ -163,12 +140,7 @@ export default {
   z-index: 200;
   position: relative;
 }
-.angle {
-  width: 3rem;
-  margin-left: 10%;
-  margin-right: 0.5rem;
-  font-size: 1.15rem;
-}
+
 .rel {
   position: relative;
 }
