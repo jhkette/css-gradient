@@ -149,7 +149,6 @@ export default {
 }
 .right-col {
   position: absolute;
-
   left: 13%;
   top: -9.5rem;
   z-index: 900;
