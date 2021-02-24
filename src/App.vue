@@ -1,8 +1,8 @@
 <template>
-  <v-app>
+  <v-app class="main-container">
     <Circle1 v-for="colour in colours" :key="colour" :colour="colour" />
     <Topbar />
-    <main class="cont">
+    <main>
       <section class="heading">
         <p class="first">
         Generate a gradient and then get the CSS. Press the colour swatches to change
@@ -74,6 +74,13 @@ export default {
 };
 </script>
 <style scoped>
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  height: fit-content;
+}
 .dot {
   height: 25px;
   width: 25px;
@@ -86,10 +93,10 @@ export default {
   width: 65%;
   margin: auto;
   position: relative;
-  top: -28.5rem;
+  top: -23rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 3rem;
   z-index: 100;
   border: 2px solid #24292e;
 }

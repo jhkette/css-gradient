@@ -503,7 +503,7 @@ template {
   background: linear-gradient(68deg, #F2F2F2FF 0%, #e0e0e0 100%);
   opacity: 1;
   overflow: hidden;
-  max-height: 119vh;
+  max-height: 100vh;
 }
 
 p {

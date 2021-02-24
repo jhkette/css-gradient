@@ -48,18 +48,17 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  height: 28rem;
+  height: 24.5rem;
   background-color: white;
   position: relative;
   z-index: 10;
   border-top: 2px solid #24292e;
   border-bottom: 2px solid #24292e;
+  top: -1rem;
 }
 .border {
   width: 100%;
   margin: 2rem auto 0rem auto;
-  height: 33rem;
-
   z-index: 10;
   position: relative;
 }
