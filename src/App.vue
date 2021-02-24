@@ -77,6 +77,7 @@ export default {
 .main-container{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 main{
   height: fit-content;
@@ -93,7 +94,7 @@ main{
   width: 65%;
   margin: auto;
   position: relative;
-  top: -23rem;
+  top: -22.5rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
   padding: 0.5rem 3rem;

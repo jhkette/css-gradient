@@ -54,7 +54,7 @@ export default {
   z-index: 10;
   border-top: 2px solid #24292e;
   border-bottom: 2px solid #24292e;
-  top: -1rem;
+ 
 }
 .border {
   width: 100%;
