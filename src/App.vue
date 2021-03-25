@@ -39,7 +39,6 @@ import Slider from "./components/Slider";
 import Opacity from "./components/Opacity";
 import Colors from "./components/Colors";
 import Modal from "./components/modal";
-import Footer from "./components/Footer";
 import Direction from "./components/Direction";
 import(/* webpackPreload: true */ "typeface-source-sans-pro/index.css");
 import { mapGetters } from "vuex";
@@ -54,7 +53,7 @@ export default {
     Topbar,
     Modal,
     Circle1,
-    Footer,
+   
     Direction,
   },
   computed: {
