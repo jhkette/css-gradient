@@ -26,7 +26,7 @@
         </div>
       </div>
     </main>
-    <Footer />
+    
   </v-app>
 </template>
 
