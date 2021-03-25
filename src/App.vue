@@ -94,7 +94,7 @@ main{
   width: 65%;
   margin: auto;
   position: relative;
-  top: -22.5rem;
+ top: -24.5rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
   padding: 0.5rem 3rem;
@@ -117,7 +117,7 @@ main{
 }
 .first {
   margin: 2rem 0 0rem 0;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3rem;
   color: #1b1f1f;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
