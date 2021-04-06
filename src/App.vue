@@ -78,9 +78,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
 }
-main{
-  height: fit-content;
-}
+
 .dot {
   height: 25px;
   width: 25px;
@@ -93,10 +91,10 @@ main{
   width: 65%;
   margin: auto;
   position: relative;
- top: -24.5rem;
+ top: -33.5rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
-  padding: 0.5rem 3rem;
+  padding: 2rem 3rem;
   z-index: 100;
   border: 2px solid #24292e;
 }
@@ -127,6 +125,7 @@ main{
   width: 80%;
   margin: auto;
   position: relative;
+  min-height: 10vh;
 }
 .copy-msg {
   position: absolute;

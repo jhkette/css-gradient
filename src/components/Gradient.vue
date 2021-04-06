@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  height: 28.5rem;
+  height: 100%;
   background-color: white;
   position: relative;
   z-index: 10;
@@ -59,6 +59,7 @@ export default {
   margin: 1rem auto 0rem auto;
   z-index: 10;
   position: relative;
+  height: 80vh;
 }
 .gradient {
   width: 100%;
