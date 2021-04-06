@@ -91,12 +91,12 @@ export default {
   width: 65%;
   margin: auto;
   position: relative;
- top: -33.5rem;
+ top: -36.5rem;
   background-color: #eaeaea;
   border-radius: 0.25rem;
-  padding: 2rem 3rem;
+  padding: 4.5rem 3rem;
   z-index: 100;
-  border: 2px solid #24292e;
+  border: 1px solid #24292e56;
 }
 
 .cross {
