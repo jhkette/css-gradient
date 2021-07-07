@@ -52,6 +52,7 @@ export default {
   background-color: white;
   position: relative;
   z-index: 10;
+  border-top: 2px solid #24292e;
  
 }
 .border {
